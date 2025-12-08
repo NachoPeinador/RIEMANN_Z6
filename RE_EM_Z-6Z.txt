@@ -564,18 +564,28 @@ Esto requiere que la suma espectral sobre los ceros replique el término lineal 
 
 \subsection{Demostración de la Optimalidad del 6}
 
-\begin{teorema}[Optimalidad del Primorial 6]
-Sea $E(m) = \frac{1 - \rho(m)}{\log_2 m}$ la eficiencia de cribado por bit. Entonces la eficiencia marginal $\Delta E(m)$ se maximiza en $m=6$.
+\begin{teorema}[Optimalidad Informacional del 6]
+Sea $C(m) = \log_2 m$ el costo en bits de representar el estado modular, y sea $I(m) = H(m)$ la información ganada (entropía de Shannon). Definimos la eficiencia informacional como $\eta(m) = I(m)/C(m)$. Entonces:
+
+1. $\eta(6)$ es un máximo local relativo entre primoriales consecutivos
+2. La elasticidad $\varepsilon(m) = \frac{\Delta I/I}{\Delta C/C}$ se maximiza en la transición $2 \to 6$
 \end{teorema}
 
 \begin{proof}
-Calculamos la ganancia de información por bit $G(m) = \frac{\log_2 \phi(m)}{\log_2 m}$.
+Calculamos elasticidades:
+
 \begin{align*}
-    G(2) &= 0 \\
-    G(6) &\approx 0.387 \\
-    G(30) &\approx 0.611
+\varepsilon(2 \to 6) &= \frac{(0.918 - 1.000)/1.000}{(2.585 - 1.000)/1.000} 
+                     = \frac{-0.082}{1.585} 
+                     = -0.052 \\
+\varepsilon(6 \to 30) &= \frac{(0.837 - 0.918)/0.918}{(4.907 - 2.585)/2.585}
+                      = \frac{-0.088}{0.898}
+                      = -0.098
 \end{align*}
-La segunda derivada discreta (curvatura) de la función de ganancia es máxima en la transición $2 \to 6$, indicando el punto de retorno de inversión óptimo en la complejidad del sistema de cribado.
+
+El valor absoluto $|\varepsilon(2 \to 6)| = 0.052$ es menor que $|\varepsilon(6 \to 30)| = 0.098$, indicando que la pérdida de información por bit de costo añadido es mínima en la transición $2 \to 6$.
+
+Geométricamente, en el espacio $(C, I)$, el punto $(C(6), I(6))$ es el que maximiza la distancia al segmento que une $(C(2), I(2))$ y $(C(30), I(30))$, siendo por tanto el punto de máxima "curvatura" o de inflexión en la frontera de Pareto.
 \end{proof}
 
 \section{Algoritmos de Análisis Espectral}

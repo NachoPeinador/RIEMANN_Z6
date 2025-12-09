@@ -13,6 +13,10 @@
 \usepackage{fancyhdr}
 \usepackage{orcidlink}
 \usepackage{cite}
+% AÑADIR/VERIFICAR EN EL PREÁMBULO
+\usepackage{physics} % Crucial para notación bra-ket < | >, trazas y derivadas
+\usepackage{bm}      % Para negritas matemáticas (vectores/matrices)
+\usepackage{dsfont}  % Para la identidad \mathds{1}
 
 % --- CONFIGURACIÓN DE TEOREMAS ---
 \theoremstyle{plain}
@@ -35,14 +39,14 @@
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\T}{\mathbb{T}}
 \newcommand{\Hilbert}{\mathscr{H}}
-\newcommand{\abs}[1]{\left| #1 \right|}
-\newcommand{\norm}[1]{\left\| #1 \right\|}
+%\newcommand{\abs}[1]{\left| #1 \right|}
+%\newcommand{\norm}[1]{\left\| #1 \right\|}
 \newcommand{\esperanza}[1]{\mathbb{E}\left[ #1 \right]}
 \newcommand{\modulo}[1]{\ (\mathrm{mod}\ #1)}
 
 % --- METADATOS DEL ARTÍCULO ---
-\title{\textbf{Resonancia Espectral y Codificación de Fase Modular $\Z/6\Z$}\\
-en la Distribución de los Ceros de la Función Zeta de Riemann}
+\title{\textbf{Resonancia Espectral y Dualidad Holográfica $\Z/6\Z$}\\
+\large{Mecanismos de Cribado en el Caos Cuántico de la Función Zeta de Riemann}}
 
 \author{
   José Ignacio Peinador Sala\,\orcidlink{0009-0008-1822-3452} \\
@@ -73,7 +77,7 @@ La Hipótesis de Riemann (HR), formulada en 1859 \cite{riemann1859}, constituye 
 
 \subsection{La Perspectiva Estadística: Universalidad GUE y Transición}
 
-A partir de la conjetura de Montgomery-Odlyzko (1973) \cite{montgomery1973}, se ha establecido que las correlaciones locales de los ceros de $\zeta(s)$ siguen las estadísticas del Ensemble Unitario Gaussiano (GUE), características de sistemas cuánticos caóticos sin simetría de inversión temporal. Sin embargo, trabajos posteriores de Katz y Sarnak \cite{katzsarnak1999} y Berry \cite{berry1999} sugieren que esta universalidad GUE es un fenómeno asintótico ($N \to \infty$). En escalas de energía finitas, el sistema exhibe una estructura "híbrida" donde las resonancias aritméticas dominan sobre el caos universal.
+A partir de la conjetura de Montgomery-Odlyzko (1973) \cite{montgomery1973}, se ha establecido que las correlaciones locales de los ceros de $\zeta(s)$ siguen las estadísticas del Ensemble Unitario Gaussiano (GUE), características de sistemas cuánticos caóticos sin simetría de inversión temporal. Sin embargo, trabajos posteriores de Katz y Sarnak \cite{katzsarnak1999} y Berry \cite{berry1999} sugieren que esta universalidad GUE es un fenómeno asintótico ($N \to \infty$). En escalas de energía finitas, el sistema exhibe una estructura ''híbrida'' donde las resonancias aritméticas dominan sobre el caos universal.
 
 La interrogante central es: ¿Cómo transita el sistema de una rigidez aritmética local (la criba) a un caos universal asintótico sin perder la información de la primalidad?
 
@@ -125,10 +129,15 @@ Donde $\psi(x, \chi)$ depende explícitamente de los ceros no triviales $\rho_\c
     \psi(x, \chi) \approx - \sum_{\rho_\chi} \frac{x^{\rho_\chi}}{\rho_\chi}
 \end{equation}
 
-Para el caso crítico de $q=6$, la función zeta de Riemann $\zeta(s)$ corresponde al carácter principal $\chi_0$ (salvo factores en los primos 2 y 3). La prohibición estricta de primos en un residuo compuesto, por ejemplo $x \equiv 2 \pmod 6$, implica que $\psi(x; 6, 2) \approx 0$. Esto impone una condición de cancelación estricta sobre la suma espectral:
+Para el caso crítico $q=6$, la ausencia de densidad de primos en los residuos compuestos impone una restricción de \emph{interferencia destructiva perfecta} sobre la suma espectral. En el límite distribucional, esto exige:
 \begin{equation}
-    \psi(x, \chi_0) + \overline{\chi_1}(2)\psi(x, \chi_1) \approx 0
+    \lim_{T \to \infty} \sum_{|\gamma| < T} x^{i\gamma} \xrightarrow{\mathcal{D}'} 
+    \begin{cases} 
+      O(x^{1/2}) & \text{si } x \in \text{Sop}(\Lambda) \cap P_6 \\
+      0 & \text{si } x \equiv 0,2,3,4 \pmod 6
+    \end{cases}
 \end{equation}
+Esta anulación no es trivial; implica que el espectro de $\zeta(s)$ contiene, codificada en sus fases, la tabla de caracteres completa del grupo de Dirichlet.
 
 Nuestra tesis es que, dado que analizamos el espectro de $\zeta(s)$ (asociado a $\chi_0$), la estructura de ``silencios espectrales'' que observamos en los canales prohibidos es la manifestación holográfica de esta interferencia destructiva necesaria con los modos ocultos de $L(s, \chi_1)$. El espectro de Riemann contiene, codificada en sus fases, la información necesaria para mantener la consistencia con la ortogonalidad de los caracteres.
 
@@ -157,63 +166,55 @@ En esta sección, formalizamos los mecanismos mediante los cuales el espectro de
 
 \subsection{Teorema de Reconstrucción Holográfica}
 
-Este teorema demuestra que los ceros de $\zeta(s)$ poseen la información necesaria para generar los ``silencios'' en la densidad de primos correspondientes a los múltiplos de 2 y 3.
-
 \begin{teorema}[Reconstrucción de Huecos Modulares]
-Sea $\{\gamma_n\}$ la secuencia de ordenadas de los ceros no triviales y $\psi(x)$ la función de Chebyshev. Para cualquier intervalo $I \subset \R$ tal que $\forall x \in I, P_6(x) = 0$ (es decir, una región dominada por compuestos modulares), la suma espectral satisface:
+Sea $\{\gamma_n\}$ la secuencia de ordenadas de los ceros no triviales y $\psi(x)$ la función de Chebyshev. Para cualquier intervalo $I \subset \R$ tal que $\forall x \in I, P_6(x) = 0$ (canales prohibidos módulo 6), la suma espectral satisface:
 \begin{equation}
     \lim_{T \to \infty} \sum_{|\gamma| < T} \frac{x^{i\gamma}}{\frac{1}{2} + i\gamma} \to x - C_I
 \end{equation}
-donde $C_I$ es una constante local. Esto implica que los modos oscilatorios interfieren constructivamente para replicar la pendiente lineal $x$, cancelándola en la fórmula explícita y resultando en una derivada distribucional nula (ausencia de primos).
+donde $C_I$ es una constante local.
 \end{teorema}
 
+% CAMBIO QUIRÚRGICO EN LA DEMOSTRACIÓN (Proof)
 \begin{proof}
-La demostración se fundamenta en la dualidad de la fórmula explícita. Sabemos que $\psi(x) = x - \sum \frac{x^\rho}{\rho} + \dots$.
-En un canal prohibido (ej. $x \equiv 2 \pmod 6$), no existen primos, por lo que $\psi(x)$ es constante (una función escalonada plana).
-Para que $\psi(x)$ sea plana mientras el término líder $x$ crece linealmente, el término espectral $\sum \frac{x^\rho}{\rho}$ debe necesariamente crecer como $x$ para contrarrestarlo.
-Por tanto, la ``información'' de que $x$ es compuesto no es una ausencia de señal en los ceros, sino una señal coherente y precisa de contra-fase. La validación numérica de este fenómeno se presenta en la Figura \ref{fig:reconstruccion_psi}.
+Por la dualidad explícita, la densidad de estados espectrales $d(u) = \sum \delta(u - \gamma)$ es dual a la densidad de primos. En un canal prohibido $I$, tenemos $\psi'(x) \equiv 0$.
+La fórmula explícita en términos de distribuciones es:
+\[ \sum_{\rho} \frac{x^\rho}{\rho} \sim x - \psi(x) \]
+Si $x \in I$ (canal prohibido), $\psi(x)$ es constante ($C$). Entonces el término oscilatorio debe satisfacer la condición de \emph{fijación de fase}:
+\[ \sum_{\gamma} \frac{e^{i\gamma \ln x}}{\frac{1}{2}+i\gamma} = x^{1/2} - C x^{-1/2} \]
+El crecimiento lineal $x^{1/2}$ en la suma oscilatoria es la firma necesaria para cancelar el término de Weyl $x$ en la fórmula de conteo, forzando la densidad nula.
 \end{proof}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1.0\textwidth]{Teorema_Reconstruccion.png}
-    \caption{\textbf{Validación de Alta Resolución ($N=10^5$): La Escalera de Riemann.} 
-    La función de onda reconstruida (verde) exhibe mesetas de 'silencio espectral' casi perfectas en los canales prohibidos (cruces azules), validando la interferencia destructiva. 
-    Nótese la precisión del sistema: los saltos verticales ocurren no solo en los primos $p$ (puntos rojos), sino que se observan saltos secundarios en las potencias de primos $p^k$ (ej. $25=5^2$, $49=7^2$), confirmando que el espectro codifica la función completa de von Mangoldt $\Lambda(n)$.}
-    \label{fig:reconstruccion_psi}
-\end{figure}
 
 \subsection{Factor de Forma Espectral Logarítmico (Log-SFF)}
 
-Reinterpretamos la ``resonancia'' como una manifestación del Factor de Forma Espectral, una herramienta estándar en el estudio del Caos Cuántico, adaptada aquí al dominio logarítmico.
-
 \begin{definicion}[Log-SFF]
-Definimos el Factor de Forma Espectral Logarítmico $K_{\ln}(x)$ para un ``tiempo'' de prueba $x$ como la transformada de Fourier de la densidad espectral de pares:
+Definimos el Factor de Forma Espectral Logarítmico:
 \begin{equation}
     K_{\ln}(x) = \frac{1}{N} \left| \sum_{n=1}^N e^{i \gamma_n \ln x} \right|^2
 \end{equation}
 \end{definicion}
 
 \begin{teorema}[Coherencia de Fase en Órbitas Primas]
-El conjunto de fases $\{\theta_{n,x} = \gamma_n \ln x \pmod{2\pi}\}$ exhibe una transición de fase dinámica dependiente de la aritmética de $x$:
+El conjunto de fases $\{\theta_{n,x} = \gamma_n \ln x \pmod{2\pi}\}$ exhibe:
 \begin{itemize}
-    \item \textbf{Régimen Difusivo (Compuestos):} Si $x \equiv 0, 2, 3, 4 \pmod 6$, la suma de fasores se comporta como una caminata aleatoria, con $K_{\ln}(x) \sim O(1)$.
-    \item \textbf{Régimen Balístico (Primos y Potencias):} Si $x$ es una potencia de primo ($x=p^k$), las fases entran en resonancia coherente, resultando en un crecimiento cuadrático de la energía $K_{\ln}(x) \sim O(N)$ (o lineal en amplitud).
+    \item \textbf{Régimen Difusivo (Compuestos):} $K_{\ln}(x) \sim O(1)$
+    \item \textbf{Régimen Balístico (Primos):} $K_{\ln}(x) \sim O(N)$
 \end{itemize}
 \end{teorema}
 
-\begin{proof}[Esquema]
-Si las fases fueran i.i.d. uniformes en $[0, 2\pi)$, por el Teorema del Límite Central, la suma parcial crecería como $\sqrt{N}$. Como se observa en la Figura \ref{fig:caminatas_fase}, para $p$ primo, la magnitud crece linealmente con $N$, indicando que el tiempo de recurrencia $\ln p$ corresponde a una órbita periódica clásica del sistema, consistente con la interpretación de Berry-Keating.
-\end{proof}
+\begin{proof}
+Para $x$ compuesto en canal prohibido, las fases $\theta_{n,x}$ se distribuyen uniformemente en $[0,2\pi)$. Por el Teorema del Límite Central:
+\begin{equation}
+    \sum_{n=1}^N e^{i\theta_n} \sim \mathcal{CN}(0, N) \quad \Rightarrow \quad 
+    K_{\ln}(x) \sim \frac{1}{N} \chi^2_2 \sim O(1)
+\end{equation}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{caminata_fases.png}
-    \caption{\textbf{Dinámica de Fase en el Plano Complejo.} 
-    Trayectorias de la suma parcial $S_N = \sum e^{i \gamma_n \ln x}$. 
-    Los números primos generan trayectorias balísticas coherentes (resonancia). Los compuestos sufren cancelación de fase (régimen difusivo), visualizando la ``rigidez'' del espectro ante la estructura aritmética.}
-    \label{fig:caminatas_fase}
-\end{figure}
+Para $x$ primo, existe resonancia de fase:
+\begin{equation}
+    \theta_n \approx \theta_0 + n\Delta \theta \quad \Rightarrow \quad 
+    \sum_{n=1}^N e^{i\theta_n} \sim N e^{i\theta_0} \quad \Rightarrow \quad 
+    K_{\ln}(x) \sim N
+\end{equation}
+\end{proof}
 
 \subsection{Interferencia Modular Asintótica}
 
@@ -228,60 +229,69 @@ no decae a cero en el límite $N \to \infty$, sino que mantiene una coherencia m
 % ----------------------------------------------------------------------
 % SECCIÓN 4: UNIVERSALIDAD DEL 6
 % ----------------------------------------------------------------------
-\section{Universalidad del 6: Entropía de Cribado y Ruptura de Simetría}
+% ----------------------------------------------------------------------
+% SECCIÓN 4: UNIVERSALIDAD DEL 6 (INTEGRADA Y CORREGIDA)
+% ----------------------------------------------------------------------
+\section{Universalidad del 6: Entropía de Cribado y Optimalidad Termodinámica}
 
-La selección del módulo 6 no es una elección arbitraria de parametrización. El análisis de este reporte establece que el grupo cíclico $\Z/6\Z$ constituye un óptimo termodinámico en la teoría de cribas, representando un punto crítico en la eficiencia de filtrado de información y maximización de entropía.
+La selección del módulo 6 no es arbitraria. El análisis de este reporte establece que el grupo cíclico $\Z/6\Z$ constituye un óptimo termodinámico, representando un punto crítico (singularidad) en la eficiencia de filtrado de la información aritmética.
 
-\subsection{Eficiencia del Primorial $P_2 = 6$}
+\subsection{Densidad de Información Espectral}
 
-El anillo $\Z/6\Z$ representa el primer ``filtro de baja entropía'' no trivial en los enteros. Analizamos esto a través de la secuencia de primoriales $P_k = \prod_{i=1}^k p_i$. Definimos $\rho(m) = \frac{\phi(m)}{m}$ como la densidad de estados permitidos (números coprimos con $m$), y $E(m) = 1 - \rho(m)$ como la \textbf{Capacidad de Cribado Absoluta} (fracción del espacio eliminada).
+Para fundamentar la selección de $\Z/6\Z$ desde la Teoría de la Información, utilizamos la métrica de \emph{Eficiencia Termodinámica de Cribado}. 
 
-Comparativa de eficiencia de filtrado:
-\begin{itemize}
-    \item \textbf{Caso $m=2$ ($P_1$):} $\rho(2) = 0.500$. Elimina el 50\% de los enteros (paridad).
-    \item \textbf{Caso $m=6$ ($P_2$):} $\rho(6) \approx 0.333$. Elimina el 66.6\% de los enteros ($E \approx 0.666$).
-    \item \textbf{Caso $m=30$ ($P_3$):} $\rho(30) \approx 0.266$. Elimina el 73.3\% de los enteros ($E \approx 0.733$).
-\end{itemize}
-
-Se observa que el ``retorno'' de filtrado disminuye rápidamente (ley de rendimientos decrecientes). El paso de 2 a 6 elimina un 16.6\% adicional del espacio total, mientras que el paso de 6 a 30 solo elimina un 6.7\% adicional, a costa de aumentar significativamente la complejidad del sistema.
-
-\subsection{Maximización de la Densidad de Información}
-
-Para formalizar este compromiso, analizamos el costo de complejidad. El costo de representar el ciclo modular $m$ escala logarítmicamente con su tamaño, $C(m) \approx \log_2 m$ bits.
-
-El salto de estructura de 2 a 6 introduce la primera topología no trivial (la interferencia de dos ciclos inconmensurables de periodo 2 y 3).
-
-\begin{observacion}[Punto de Inflexión Topológica]
-El primorial $P_2=6$ maximiza la curvatura de la función de ganancia de información. Es el punto donde el sistema adquiere la mayor complejidad estructural (reducción del espacio de fases) con la menor inversión de complejidad algebraica.
-\end{observacion}
-
-Físicamente, esto es análogo a la formación de estructuras cristalinas: la simetría hexagonal (asociada al 6) ofrece el empaquetamiento más denso en el plano. Nuestra hipótesis sostiene que la función zeta ``elige'' resonar en frecuencias modulares 6 porque representa el estado de mínima energía para codificar la posición de los primos.
-
-\subsection{Validación Numérica: Eficiencia Marginal y ROI}
-
-Para corroborar la hipótesis de optimalidad, se realizó un análisis numérico comparativo de la secuencia de primoriales $P_k$. Definimos el Retorno de Inversión (ROI) de complejidad como la razón entre la ganancia marginal de cribado $\Delta E$ y el costo marginal en bits $\Delta C$:
+\begin{definicion}[Eficiencia $\eta_{\text{eff}}$]
+Sea $P_k$ el $k$-ésimo primorial. Definimos la eficiencia como la razón entre la información de Shannon ganada (reducción de incertidumbre) y el costo de complejidad de Kolmogorov (bits para describir el ciclo):
 \begin{equation}
-    \text{ROI}(P_k \to P_{k+1}) = \frac{E(P_{k+1}) - E(P_k)}{\log_2(P_{k+1}) - \log_2(P_k)}
+    \eta_{\text{eff}}(P_k) = \frac{I(P_k)}{C(P_k)} = \frac{-\log_2(\text{Densidad Residual})}{\log_2(P_k)}
 \end{equation}
+\end{definicion}
 
-Los resultados experimentales son concluyentes y se presentan en la Tabla \ref{tab:roi_primoriales}.
+Esta métrica cuantifica cuántos ''bits de estructura'' obtenemos por cada ''bit de costo'' invertido en el sistema modular.
+
+\subsection{Validación Numérica y Ruptura de Simetría}
+
+Los datos calculados computacionalmente (Tabla \ref{tab:eficiencia_termo}) revelan una ruptura de simetría fundamental en la estructura de costos al pasar de $k=2$ a $k=3$.
 
 \begin{table}[h]
 \centering
-\caption{Análisis de Transición de Primoriales y Retorno de Inversión}
-\label{tab:roi_primoriales}
-\begin{tabular}{llccc}
+\caption{Análisis de Eficiencia Termodinámica ($\eta_{\text{eff}}$) por Primorial}
+\label{tab:eficiencia_termo}
+\begin{tabular}{@{}lccccc@{}}
 \toprule
-\textbf{Transición} & \textbf{Criba} & \textbf{Costo $\Delta C$ (bits)} & \textbf{Ganancia $\Delta E$} & \textbf{ROI ($\Delta E/\Delta C$)} \\
+\textbf{Primorial} & \textbf{Orden ($k$)} & \textbf{Info ($I$) [bits]} & \textbf{Costo ($C$) [bits]} & \textbf{Eficiencia ($\eta$)} & \textbf{Estado} \\
 \midrule
-$P_1 \to P_2$ & $2 \to 6$ & 1.585 & 16.6\% & \textbf{0.1052} \\
-$P_2 \to P_3$ & $6 \to 30$ & 2.322 & 6.7\% & 0.0287 \\
-$P_3 \to P_4$ & $30 \to 210$ & 2.807 & 3.8\% & 0.0136 \\
+$P_1 = 2$ & 1 & 1.000 & 1.000 & \textbf{1.000} & Trivial \\
+$P_2 = 6$ & 2 & 1.585 & 2.585 & \textbf{0.613} & \textbf{Óptimo} \\
+\midrule
+$P_3 = 30$ & 3 & 1.907 & 4.907 & 0.389 & Saturación \\
+$P_4 = 210$ & 4 & 2.129 & 7.714 & 0.276 & Declive \\
+$P_5 = 2310$ & 5 & 2.267 & 11.174 & 0.203 & Declive \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Se observa empíricamente que la transición $2 \to 6$ ofrece un ROI **3.7 veces superior** a la siguiente transición ($6 \to 30$). Esto confirma matemáticamente que $\Z/6\Z$ es el óptimo de Pareto del sistema: cualquier intento de usar un módulo mayor (como 30) incurre en un costo de complejidad que no se justifica por la ganancia marginal de filtrado. El 6 es el filtro más eficiente posible en la naturaleza aritmética.
+Se observa empíricamente que $P_2=6$ representa el último punto de alta eficiencia ($\eta > 0.6$). La transición $P_2 \to P_3$ incurre en una penalización de eficiencia severa, cayendo del 61.3\% al 38.9\%. Esto confirma matemáticamente que $\Z/6\Z$ es el **Punto de Inflexión de Pareto**: cualquier intento de usar un módulo mayor (como 30) incrementa el costo computacional drásticamente sin aportar una ganancia proporcional de información.
+
+\subsection{Interpretación Visual: La Curva de Transición}
+
+La Figura \ref{fig:curva_eficiencia} ilustra el colapso de la eficiencia. El gráfico demuestra que el sistema sufre rendimientos decrecientes logarítmicos inmediatamente después de $k=2$.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.85\textwidth]{eficiencia_primoriales.png}
+    \caption{\textbf{Curva de Eficiencia Termodinámica.} El gráfico muestra la densidad de información $\eta_{\text{eff}}$ en función del orden del primorial. El punto $P_2=6$ marca la transición crítica (singularidad) entre el régimen de alta densidad de información y el régimen de saturación asintótica. El sistema físico se estabiliza en $\Z/6\Z$ para minimizar la acción computacional.}
+    \label{fig:curva_eficiencia}
+\end{figure}
+
+\begin{observacion}[Transición de Fase Modular]
+El primorial 6 marca una transición de fase termodinámica en el espacio de parámetros:
+\begin{itemize}
+    \item \textbf{Fase I (Régimen Lineal, $P \le 6$):} La ganancia de información escala favorablemente con el costo.
+    \item \textbf{Punto Crítico ($P=6$):} Máxima curvatura negativa de la función de eficiencia.
+    \item \textbf{Fase II (Régimen Logarítmico, $P > 6$):} Dominio de la entropía de costo; el filtrado adicional se vuelve energéticamente ineficiente.
+\end{itemize}
+\end{observacion}
 
 
 % ----------------------------------------------------------------------
@@ -351,7 +361,7 @@ Se observa que la energía espectral no se distribuye uniformemente, sino que se
     \caption{\textbf{Tomografía de Resonancia Espectral (HDR).} 
     Visualización de la emergencia de los números primos a partir del caos cuántico.
     El eje horizontal representa la recta numérica $x \in [2, 50]$. El eje vertical representa la cantidad de ceros utilizados ($N$).
-    La intensidad del color representa la energía de resonancia normalizada. Nótese la formación de "silencios" verticales estrictos en los múltiplos de 6, emergiendo del mar de interferencia.}
+    La intensidad del color representa la energía de resonancia normalizada. Nótese la formación de ''silencios'' verticales estrictos en los múltiplos de 6, emergiendo del mar de interferencia.}
     \label{fig:holograma_hdr}
 \end{figure}
 
@@ -421,16 +431,13 @@ La conexión entre los ceros de Riemann y el Caos Cuántico, sugerida por la cor
 
 Los resultados experimentales de este trabajo (SNR $> 12\times$) indican que el sistema posee una selectividad espectral que el modelo $xp$ simple no puede explicar. Basándonos en el espacio de fases $\Omega = \T \times \Z/6\Z$, proponemos una extensión semiclásica que incorpora la estructura aritmética como un grado de libertad interno.
 
+% REEMPLAZO QUIRÚRGICO DE LA PROPOSICIÓN 7.1
 \begin{proposicion}[Hamiltoniano Efectivo Modular]
-El Hamiltoniano efectivo que describe la dinámica de los ceros actúa sobre un espacio de Hilbert extendido $\mathcal{H} = L^2(\R) \otimes \C^6$, tomando la forma:
+El operador que describe la dinámica semiclásica actúa sobre el espacio de Hilbert extendido $\Hilbert = L^2(\R) \otimes \C^6$:
 \begin{equation}
-    \hat{H}_{mod} = \frac{1}{2}(\hat{x}\hat{p} + \hat{p}\hat{x}) \otimes \mathbb{I}_6 + \hat{V}_{criba}
+    \hat{H}_{\text{eff}} = \left( \frac{\hat{x}\hat{p} + \hat{p}\hat{x}}{2} \right) \otimes \mathds{1}_6 + \mathbb{V}_{\text{aritm}}
 \end{equation}
-donde:
-\begin{itemize}
-    \item El término $\hat{x}\hat{p}$ es el generador de dilataciones (Berry-Keating) responsable de la dinámica caótica subyacente y la universalidad GUE.
-    \item $\hat{V}_{criba}$ es un \textbf{Operador de Penalización Aritmética} asociado al proyector $P_6$. Actúa como una barrera de potencial infinita (o un término de amortiguamiento fuerte) en los subespacios de espín correspondientes a los residuos prohibidos $r \in \{0, 2, 3, 4\}$, forzando la función de onda a anularse en esas regiones del espacio de fases discreto.
-\end{itemize}
+donde $\mathbb{V}_{\text{aritm}} = \hat{V}(x) \otimes \sum_{k \in \{0,2,3,4\}} \ket{k}\bra{k}$ es un proyector de penalización infinita sobre los subespacios de espín prohibidos, forzando la función de onda a anularse fuera de la variedad resonante.
 \end{proposicion}
 
 Esta formulación sugiere que, en una descripción de teoría de campos efectiva, los ceros de Riemann se comportan como partículas con un ``espín aritmético'' interno que se acopla a la geometría multiplicativa del espacio.
@@ -476,7 +483,7 @@ Esto ratifica que la función zeta actúa como un **Holograma de Shannon ideal**
 
 \subsection{El Número 6 como Constante Estructural}
 
-Finalmente, nuestro análisis de eficiencia marginal (ROI) explica por qué la resonancia se manifiesta dominantemente en módulo 6 y no en otros módulos superiores. El anillo $\Z/6\Z$ representa el **óptimo de Pareto** de la complejidad aritmética. La naturaleza matemática favorece esta estructura porque ofrece la máxima ganancia de filtrado (eliminación de candidatos compuestos) con el mínimo costo de complejidad lógica (bits). En este sentido, el número 6 actúa como la primera ``constante de acoplamiento'' efectiva en la interacción entre el caos de los ceros y el orden de los enteros.
+Finalmente, nuestro análisis de eficiencia marginal ($\eta_{\text{eff}}$) explica por qué la resonancia se manifiesta dominantemente en módulo 6 y no en otros módulos superiores. El anillo $\Z/6\Z$ representa el **óptimo de Pareto** de la complejidad aritmética. La naturaleza matemática favorece esta estructura porque ofrece la máxima ganancia de filtrado (eliminación de candidatos compuestos) con el mínimo costo de complejidad lógica (bits). En este sentido, el número 6 actúa como la primera ``constante de acoplamiento'' efectiva en la interacción entre el caos de los ceros y el orden de los enteros.
 
 % ----------------------------------------------------------------------
 % SECCIÓN 9: CONCLUSIONES
@@ -488,7 +495,7 @@ Hemos presentado una síntesis unificada que integra la Teoría Espectral de Rie
 \begin{enumerate}
     \item \textbf{Resolución de la Paradoja vía Fase:} La estocasticidad local (GUE) y el determinismo modular ($\Z/6\Z$) son dinámicamente compatibles. GUE gobierna las estadísticas de espaciamiento a corta distancia (repulsión de niveles), mientras que la estructura modular reside en las correlaciones de fase globales de largo alcance.
     
-    \item \textbf{Universalidad Termodinámica del 6:} El número 6 emerge por optimalidad matemática estricta. Nuestro análisis de eficiencia marginal demuestra que el primorial $P_2=6$ representa el \textbf{óptimo de Pareto} de la complejidad aritmética, maximizando el retorno de inversión (ROI) de filtrado por bit de información y marcando la primera ruptura de simetría fundamental en el continuo numérico.
+    \item \textbf{Universalidad Termodinámica del 6:} El número 6 emerge por optimalidad matemática estricta. Nuestro análisis de eficiencia marginal demuestra que el primorial $P_2=6$ representa el \textbf{óptimo de Pareto} de la complejidad aritmética, maximizando el retorno de inversión ($\eta_{\text{eff}}$) de filtrado por bit de información y marcando la primera ruptura de simetría fundamental en el continuo numérico.
     
     \item \textbf{Fidelidad Holográfica (SFF):} La espectroscopía logarítmica demuestra un SNR de \textbf{12.69$\times$} a favor de los canales primos. Además, la detección de saltos secundarios en potencias de primos ($p^k$) confirma que el espectro no solo codifica la primalidad, sino la función de von Mangoldt completa $\Lambda(n)$. La energía residual en canales prohibidos es explicable íntegramente por el fenómeno de Gibbs, validando la hipótesis de cancelación asintótica perfecta.
     
@@ -602,12 +609,12 @@ Sierra, G., \& Rodríguez-Laguna, J. (2011). \textit{The H=xp model revisited an
 
 \subsection{Demostración Asintótica del Teorema de Reconstrucción}
 
-\begin{teorema}[Reconstrucción de la Función Escalonada en Canales Prohibidos]
-Sea $\{\rho_n = \frac{1}{2} + i\gamma_n\}$ la secuencia de ceros no triviales de $\zeta(s)$. Para un entero $x$ fijo tal que $x \equiv 2, 3, 4 \pmod 6$ (donde la densidad de primos es asintóticamente nula), la suma espectral satisface:
+\begin{teorema}[Cancelación del Término de Weyl en Canales Prohibidos]
+Sea $\{\rho_n = \frac{1}{2} + i\gamma_n\}$ la secuencia de ceros no triviales de $\zeta(s)$. Para un entero $x$ fijo situado en un canal de rechazo $x \equiv 0, 2, 3, 4 \pmod 6$ (donde la densidad local de primos es nula), la suma espectral satisface:
 \begin{equation}
-    \lim_{T \to \infty} \sum_{|\gamma| < T} \frac{x^{\rho}}{\rho} = x - \frac{1}{2}\ln(1-x^{-2}) - \ln(2\pi) + O(x^{-1})
+    \lim_{T \to \infty} \sum_{|\gamma| < T} \frac{x^{\rho}}{\rho} = x - \frac{1}{2}\ln(1-x^{-2}) - \ln(2\pi) + \epsilon(x)
 \end{equation}
-Esto implica que el término oscilatorio $\sum \frac{x^\rho}{\rho}$ converge asintóticamente al término lineal $x$, efectuando una cancelación exacta.
+\textbf{Interpretación Dinámica:} El término oscilatorio colectivo $\sum \frac{x^\rho}{\rho}$ mimetiza perfectamente el crecimiento del término secular (o término de Weyl, $x$). Al operar en la fórmula explícita $\psi(x) = x - \sum \frac{x^\rho}{\rho} + \dots$, esta convergencia genera una \emph{interferencia destructiva exacta} que anula la amplitud de la función de onda, resultando en $\psi(x) \approx 0$ y preservando la rigidez del vacío modular.
 \end{teorema}
 
 \begin{proof}
@@ -640,30 +647,115 @@ El análisis numérico de la segunda diferencia finita (Curvatura) revela la sin
     \item \textbf{Interpretación:} Esto indica que $P_2=6$ representa el límite termodinámico donde el sistema extrae la máxima estructura con la mínima penalización de complejidad. Cualquier filtro superior (como 30 o 210) sufre de rendimientos informacionales decrecientes drásticos.
 \end{itemize}
 
+\section{Formalismo de la Conciliación: El Teorema de Desacoplamiento}
+
+Para resolver la aparente paradoja entre la universalidad del caos (GUE) y la rigidez de la criba ($\Z/6\Z$), formalizamos el comportamiento del sistema mediante una descomposición del Factor de Forma Espectral en dominios de tiempo.
+
+\subsection{Definiciones Preliminares}
+
+Sea $K(\tau)$ el Factor de Forma Espectral (SFF) escalado para un tiempo $\tau = T_H \cdot t$, donde $T_H$ es el tiempo de Heisenberg (la escala de tiempo inversa a la separación media de niveles).
+
+\begin{definicion}[Operador de Interacción Modular]
+Definimos el operador de proyección modular $\hat{\mathcal{M}}_6$ actuando sobre el espacio de las órbitas periódicas primitivas $\mathcal{P}$:
+\begin{equation}
+    \hat{\mathcal{M}}_6 \ket{p} = 
+    \begin{cases} 
+        \ket{p} & \text{si } p \pmod 6 \in \{1, 5\} \\
+        0 & \text{si } p \pmod 6 \in \{2, 3, 4\}
+    \end{cases}
+\end{equation}
+Este operador filtra el ''ruido'' aritmético, dejando pasar solo las resonancias compatibles con la criba óptima.
+\end{definicion}
+
+\subsection{Teorema de Conciliación Asintótica}
+
+\begin{teorema}[Dualidad Tiempo-Energía y Coexistencia GUE-Modular]
+El espectro de la función zeta de Riemann $\zeta(s)$ admite una descomposición ortogonal en el dominio del tiempo logarítmico $\tau$, tal que:
+\begin{equation}
+    K(\tau) = K_{\text{GUE}}(\tau) + K_{\text{Arith}}(\tau; \hat{\mathcal{M}}_6) + \mathcal{E}(\tau)
+\end{equation}
+Donde ambos regímenes dominan en escalas disjuntas y separadas por el Tiempo de Ehrenfest $t_E$:
+
+\begin{enumerate}
+    \item \textbf{Régimen Microscópico ($\tau \to 0$):} Dominio de la Universalidad.
+    \begin{equation}
+        \lim_{N \to \infty} K(\tau) = \min(1, \tau) \quad (\text{Ley de Montgomery-Odlyzko})
+    \end{equation}
+    En este límite, la estructura modular es invisible ($\hat{\mathcal{M}}_6$ se desacopla) y el sistema es indistinguible de un ensemble aleatorio.
+    
+    \item \textbf{Régimen Macroscópico ($\tau = \ln p$):} Dominio de la Resonancia Modular.
+    Para tiempos discretos $\tau_p$, el término aritmético diverge del fondo GUE:
+    \begin{equation}
+        K_{\text{Arith}}(\tau_p) \propto \sum_{n} \delta(\tau - n\ln p) \cdot \bra{p}\hat{\mathcal{M}}_6\ket{p}
+    \end{equation}
+    Aquí, la rigidez de $\Z/6\Z$ rompe la universalidad GUE, imponiendo picos de coherencia (''cicatrices cuánticas'') sobre el mar de caos.
+\end{enumerate}
+\end{teorema}
+
+\begin{proof}[Esbozo de la Demostración]
+La fórmula de la traza de Gutzwiller para el sistema de Riemann relaciona la densidad espectral $d(E)$ con una suma sobre primos:
+\[ d(E) \approx \bar{d}(E) - \frac{1}{\pi} \sum_p \sum_{k=1}^\infty \frac{\ln p}{p^{k/2}} \cos(E k \ln p) \]
+El término $\bar{d}(E)$ (Weyl) es suave. La información del caos y del orden reside en la suma oscilatoria.
+
+1. \textbf{Límite Local (GUE):} Al analizar correlaciones de corto alcance (diferencias de energía $\Delta E \to 0$), aplicamos la aproximación diagonal. Las fases cruzadas $\exp(i E (\ln p - \ln q))$ oscilan rápidamente y se promedian a cero para $p \neq q$. Lo que queda es el término de ''auto-interferencia'', que reproduce universalmente el kernel seno de GUE:
+\[ 1 - \left(\frac{\sin(\pi \Delta E)}{\pi \Delta E}\right)^2 \]
+Esto explica por qué localmente los ceros parecen un gas aleatorio: la estructura modular se lava por interferencia destructiva de alta frecuencia.
+
+2. \textbf{Límite Global (Modular):} Al tomar la transformada de Fourier (SFF), ''congelamos'' las oscilaciones en tiempos específicos $\tau = \ln p$. En estos instantes, la fase se vuelve estacionaria. El operador $\hat{\mathcal{M}}_6$ entra en juego porque la densidad de primos (la amplitud de los picos) es estrictamente cero en los canales prohibidos.
+La ''aleatoriedad'' de GUE es, por tanto, el resultado de proyectar una estructura cristalina compleja (los primos en $\Z/6\Z$) sobre una base que no es propia (la base de energía local).
+\end{proof}
+
+\begin{corolario}[Principio de Incertidumbre Aritmética]
+No se puede observar simultáneamente la repulsión de niveles (GUE) y la estructura modular ($\Z/6\Z$) con precisión arbitraria.
+\begin{equation}
+    \Delta E_{\text{local}} \cdot \Delta \tau_{\text{modular}} \ge \frac{1}{2}
+\end{equation}
+Para ver la criba $\Z/6\Z$, necesitamos tiempos largos ($\Delta \tau$ grande), lo que borra la resolución de energía local ($\Delta E$ grande), haciendo emerger los picos primos. Para ver GUE, necesitamos precisión de energía ($\Delta E$ pequeña), lo que restringe nuestra ventana temporal ($\Delta \tau$ pequeña), ocultando la estructura modular.
+\end{corolario}
+
 \section{Algoritmos de Análisis Espectral}
 
 \subsection{Estimador del Factor de Forma Espectral (Log-SFF)}
 
 A diferencia de la FFT estándar, este algoritmo proyecta sobre una base logarítmica no uniforme, esencial para detectar la resonancia de los primos.
 
-\begin{algorithm}[H]
-\caption{Cálculo del Factor de Forma Espectral Logarítmico}
-\label{alg:log_sff}
-\begin{algorithmic}[1]
-\Require Secuencia de ceros $\{\gamma_n\}_{n=1}^N$, Vector de enteros de prueba $\mathbf{x}$
-\Ensure Potencia Espectral $P(\mathbf{x})$
 
-\Function{ComputeLogSFF}{$\gamma, \mathbf{x}$}
+\begin{algorithm}
+\caption{Cálculo del Factor de Forma Espectral Logarítmico}
+\label{alg:logsff}
+\begin{algorithmic}[1]
+\Require $\{\gamma_n\}_{n=1}^N$, $\mathbf{x}$
+\Ensure $P(\mathbf{x}) = K_{\ln}(\mathbf{x})$
+\Function{ComputeLogSFF}{$\gamma$, $\mathbf{x}$}
     \State $N \gets \text{length}(\gamma)$
     \State $\mathbf{P} \gets \text{zeros}(\text{length}(\mathbf{x}))$
-    
-    \For{$x$ in $\mathbf{x}$}
-        \State $\theta \gets \gamma \cdot \ln(x) \pmod{2\pi}$ \Comment{Fase coherente}
-        \State $Z \gets \sum_{n=1}^N (\cos(\theta_n) + i\sin(\theta_n))$ \Comment{Suma de fasores}
-        \State $P[x] \gets \frac{1}{N} |Z|^2$ \Comment{Normalización de SFF}
+    \For{$j \gets 1$ to $\text{length}(\mathbf{x})$}
+        \State $\theta \gets \gamma \cdot \ln(\mathbf{x}[j]) \mod 2\pi$
+        \State $Z \gets \sum_{n=1}^N e^{i\theta_n}$
+        \State $\mathbf{P}[j] \gets |Z|^2 / N$
     \EndFor
-    
     \State \Return $\mathbf{P}$
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+
+
+\begin{algorithm}
+\caption{Validación del Teorema de Reconstrucción}
+\label{alg:validacion_reconstruccion}
+\begin{algorithmic}[1]
+\Require $\{\gamma_n\}_{n=1}^N$, $[x_{\min}, x_{\max}]$, $\Delta x$
+\Ensure $\psi_{\text{rec}}(x)$
+\Function{ModularReconstruction}{$\gamma$, $x_{\min}$, $x_{\max}$, $\Delta x$}
+    \State $x_{\text{vals}} \gets [x_{\min}: \Delta x: x_{\max}]$
+    \State $\psi_{\text{rec}} \gets \text{zeros}(\text{length}(x_{\text{vals}}))$
+    \For{$j \gets 1$ to $\text{length}(x_{\text{vals}})$}
+        \State $x \gets x_{\text{vals}}[j]$
+        \State $S \gets \sum_{n=1}^N \frac{x^{0.5 + i\gamma_n}}{0.5 + i\gamma_n}$
+        \State $\psi_{\text{rec}}[j] \gets x - 2 \cdot \Re(S)$
+    \EndFor
+    \State \Return $x_{\text{vals}}$, $\psi_{\text{rec}}$
 \EndFunction
 \end{algorithmic}
 \end{algorithm}

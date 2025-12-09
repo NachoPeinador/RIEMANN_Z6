@@ -116,6 +116,8 @@ donde las coordenadas se definen como:
     \item \textbf{Residuo Modular ($r_p$):} $r_p = p \pmod{6}$. Esta coordenada captura la clase de congruencia del entero bajo análisis.
 \end{itemize}
 
+Esta descomposición topológica en $\Omega$ es isomorfa a la estructura del espacio de Hilbert $\mathcal{V}_6$ identificada recientemente en el análisis espectral de constantes trascendentes \cite{peinador_pi_2025}. En dicho marco, los canales modulares $\ket{1}$ y $\ket{5}$ actúan como guías de onda ortogonales que desacoplan la información aritmética de los modos de ruido parásitos (múltiplos de 2 y 3), sugiriendo que $\Z/6\Z$ es un sustrato universal tanto para la distribución de primos como para las series de Ramanujan.
+
 Esta formulación desacopla los grados de libertad: la ``energía'' intrínseca del cero interactúa con la ``geometría'' del primo para producir una fase que evoluciona en $\Omega$.
 
 \subsection{Fundamento Analítico: Ortogonalidad de Caracteres}
@@ -293,6 +295,41 @@ El primorial 6 marca una transición de fase termodinámica en el espacio de par
 \end{itemize}
 \end{observacion}
 
+\subsection{Anclaje Analítico: La Singularidad Cuadrática Perfecta}
+
+Más allá de la eficiencia entrópica, la estructura $\Z/6\Z$ exhibe una propiedad única en la teoría de funciones $L$ de Dirichlet que la distingue de cualquier otro módulo: la existencia de una identidad exacta libre de factores de corrección.
+
+Basándonos en trabajos recientes sobre identidades modulares \cite{Peinador2024c}, establecemos que la energía espectral del filtro (representada por la suma de inversos de cuadrados) es exactamente el cuadrado de la amplitud de su señal alternada fundamental.
+
+\begin{teorema}[Identidad de Coherencia de Fase $\Z/6\Z$]
+Sea $\chi_0$ el carácter principal módulo 6 (filtro de coprimalidad) y $\chi_{12}$ el carácter inducido por la estructura de espín alternado. Se cumple la identidad exacta:
+\begin{equation}
+    L(2, \chi_0) = \left[ L(1, \chi_{12}) \right]^2
+\end{equation}
+Sin factores de corrección numéricos.
+\end{teorema}
+
+\begin{proof}
+El lado izquierdo (energía del filtro) corresponde a la función zeta sin los modos 2 y 3:
+\begin{equation}
+    L(2, \chi_0) = \zeta(2)(1-2^{-2})(1-3^{-2}) = \frac{\pi^2}{6} \cdot \frac{3}{4} \cdot \frac{8}{9} = \frac{\pi^2}{9}
+\end{equation}
+El lado derecho (amplitud de señal) corresponde a la serie alternada sobre los canales resonantes $6k+1$ y $6k+5$:
+\begin{equation}
+    L(1, \chi_{12}) = \sum_{k=0}^{\infty} (-1)^k \left( \frac{1}{6k+1} + \frac{1}{6k+5} \right) = \frac{\pi}{3}
+\end{equation}
+Elevando al cuadrado: $(\pi/3)^2 = \pi^2/9$. La identidad es perfecta ($1:1$).
+\end{proof}
+
+\subsubsection{Ruptura de Simetría en Órdenes Superiores}
+Esta coherencia es una singularidad del módulo 6. Para momentos superiores ($2k$), la relación se rompe, introduciendo un factor de decoherencia $R_k$ que decae asintóticamente:
+\begin{equation}
+    L(2k, \chi_0) = R_k \cdot [L(1, \chi_{12})]^{2k}, \quad \text{con } \lim_{k \to \infty} R_k = 0
+\end{equation}
+Específicamente, para el siguiente orden par ($k=2$, modo cuártico), $R_2 = 5/6 \approx 0.833$. 
+
+\textbf{Implicación Física:} El valor $R_1=1$ indica que, en el nivel de energía fundamental (cuadrático), el filtro $\Z/6\Z$ opera como un \emph{Estado Coherente}, transmitiendo la información aritmética sin distorsión de fase. Cualquier intento de refinar la criba a órdenes superiores o módulos mayores introduce ruido de fase ($R_k \neq 1$), confirmando analíticamente que $\Z/6\Z$ es el punto de equilibrio estable del sistema.
+
 
 % ----------------------------------------------------------------------
 % SECCIÓN 5: VALIDACIÓN EXPERIMENTAL
@@ -410,6 +447,8 @@ Se implementó un motor de factorización optimizado (\texttt{ModularWheelZ6}) u
 \vspace{0.2cm}
 \noindent \textbf{Análisis de Complejidad:} La variable de estado $c$ gestiona la alternancia dinámica del paso entre los canales primos $6k+1$ y $6k+5$. Esta optimización evita explícitamente la evaluación de candidatos en los canales de ``ruido'' (múltiplos de 2 y 3), reduciendo el espacio de búsqueda en un factor exacto de $1 - \rho(6) = 66.6\%$ respecto a una búsqueda lineal ingenua.
 
+La eficiencia de este motor no reside meramente en la reducción del espacio de búsqueda, sino en la explotación de la propiedad de \emph{Localidad Holográfica} inherente al anillo $\Z/6\Z$. Este comportamiento es análogo a la localidad observada en los algoritmos Spigot modulares para $\pi$ \cite{peinador_pi_2025}, donde la información de un dígito (o un factor) es accesible mediante aritmética modular sin necesidad de computar la ``historia'' completa de los enteros precedentes.
+
 \subsection{Resultados de la Prueba de Estrés (RSA-Extreme)}
 
 El motor fue desafiado con una clave RSA de 19 dígitos ($N \approx 3.6 \times 10^{18}$), operando cerca del límite físico de la aritmética de enteros de 64 bits sin signo.
@@ -431,7 +470,6 @@ La conexión entre los ceros de Riemann y el Caos Cuántico, sugerida por la cor
 
 Los resultados experimentales de este trabajo (SNR $> 12\times$) indican que el sistema posee una selectividad espectral que el modelo $xp$ simple no puede explicar. Basándonos en el espacio de fases $\Omega = \T \times \Z/6\Z$, proponemos una extensión semiclásica que incorpora la estructura aritmética como un grado de libertad interno.
 
-% REEMPLAZO QUIRÚRGICO DE LA PROPOSICIÓN 7.1
 \begin{proposicion}[Hamiltoniano Efectivo Modular]
 El operador que describe la dinámica semiclásica actúa sobre el espacio de Hilbert extendido $\Hilbert = L^2(\R) \otimes \C^6$:
 \begin{equation}
@@ -439,6 +477,8 @@ El operador que describe la dinámica semiclásica actúa sobre el espacio de Hi
 \end{equation}
 donde $\mathbb{V}_{\text{aritm}} = \hat{V}(x) \otimes \sum_{k \in \{0,2,3,4\}} \ket{k}\bra{k}$ es un proyector de penalización infinita sobre los subespacios de espín prohibidos, forzando la función de onda a anularse fuera de la variedad resonante.
 \end{proposicion}
+
+La necesidad de introducir el operador de potencial $\hat{V}_{criba}$ se ve corroborada independientemente por la fenomenología de las supercongruencias elípticas \cite{peinador_pi_2025}. En el espectro modular de $\pi$, se ha demostrado que la clase de residuo $\mathcal{C}_5$ induce una ``inercia modular'' efectiva (visible en la anomalía del primo inerte $p=17$) que altera la trayectoria dinámica de las sumas parciales. En nuestro modelo semiclásico para $\zeta(s)$, esta misma inercia se manifiesta como una barrera de potencial infinita que confina la función de onda a los canales permitidos.
 
 Esta formulación sugiere que, en una descripción de teoría de campos efectiva, los ceros de Riemann se comportan como partículas con un ``espín aritmético'' interno que se acopla a la geometría multiplicativa del espacio.
 
@@ -598,6 +638,9 @@ Odlyzko, A. M. (1987). \textit{On the distribution of spacings between zeros of 
 \bibitem{sierra2011}
 Sierra, G., \& Rodríguez-Laguna, J. (2011). \textit{The H=xp model revisited and the Riemann zeros}. Physical Review Letters, 106(20), 200201.
 
+\bibitem{peinador_pi_2025}
+Peinador Sala, J. I. (2025). \textit{The Modular Spectrum of $\pi$: From Prime Channel Structure to Elliptic Supercongruences} (Versión 1). Zenodo. \url{https://doi.org/10.5281/zenodo.17680024}
+
 \end{thebibliography}
 
 
@@ -647,70 +690,59 @@ El análisis numérico de la segunda diferencia finita (Curvatura) revela la sin
     \item \textbf{Interpretación:} Esto indica que $P_2=6$ representa el límite termodinámico donde el sistema extrae la máxima estructura con la mínima penalización de complejidad. Cualquier filtro superior (como 30 o 210) sufre de rendimientos informacionales decrecientes drásticos.
 \end{itemize}
 
-\section{Formalismo de la Conciliación: El Teorema de Desacoplamiento}
+\section{Formalismo de la Conciliación: Estados Coherentes y Desacoplamiento}
 
-Para resolver la aparente paradoja entre la universalidad del caos (GUE) y la rigidez de la criba ($\Z/6\Z$), formalizamos el comportamiento del sistema mediante una descomposición del Factor de Forma Espectral en dominios de tiempo.
+Para resolver la aparente tensión entre la universalidad del caos (GUE) y la rigidez de la criba ($\Z/6\Z$), formalizamos el comportamiento del sistema no solo como una separación de escalas temporales, sino como la emergencia de un estado coherente protegido por una identidad analítica exacta.
 
 \subsection{Definiciones Preliminares}
 
-Sea $K(\tau)$ el Factor de Forma Espectral (SFF) escalado para un tiempo $\tau = T_H \cdot t$, donde $T_H$ es el tiempo de Heisenberg (la escala de tiempo inversa a la separación media de niveles).
+Sea $K(\tau)$ el Factor de Forma Espectral (SFF) para un tiempo $\tau$. Introducimos el operador de filtrado sobre el espacio de órbitas primitivas:
 
-\begin{definicion}[Operador de Interacción Modular]
-Definimos el operador de proyección modular $\hat{\mathcal{M}}_6$ actuando sobre el espacio de las órbitas periódicas primitivas $\mathcal{P}$:
+\begin{definicion}[Operador de Proyección Modular $\hat{\mathcal{M}}_6$]
+El operador $\hat{\mathcal{M}}_6$ actúa sobre el estado de un primo $\ket{p}$ imponiendo la selección de canal:
 \begin{equation}
-    \hat{\mathcal{M}}_6 \ket{p} = 
-    \begin{cases} 
-        \ket{p} & \text{si } p \pmod 6 \in \{1, 5\} \\
-        0 & \text{si } p \pmod 6 \in \{2, 3, 4\}
-    \end{cases}
+    \hat{\mathcal{M}}_6 \ket{p} = \delta(p \in \Z/6\Z^\times) \ket{p}
 \end{equation}
-Este operador filtra el ''ruido'' aritmético, dejando pasar solo las resonancias compatibles con la criba óptima.
+donde $\Z/6\Z^\times = \{1, 5\}$ son las unidades del anillo.
 \end{definicion}
 
-\subsection{Teorema de Conciliación Asintótica}
+\subsection{Fundamento Analítico: Coherencia de Fase Perfecta}
 
-\begin{teorema}[Dualidad Tiempo-Energía y Coexistencia GUE-Modular]
-El espectro de la función zeta de Riemann $\zeta(s)$ admite una descomposición ortogonal en el dominio del tiempo logarítmico $\tau$, tal que:
+La estabilidad de este operador frente al ''baño térmico'' del caos GUE no es accidental. Deriva de una singularidad aritmética que demostramos en trabajos adjuntos: la existencia de una identidad cuadrática perfecta para el módulo 6.
+
+\begin{lema}[Identidad de Coherencia]
+El filtro modular $\Z/6\Z$ satisface la condición de conservación de energía unitaria en su modo fundamental:
 \begin{equation}
-    K(\tau) = K_{\text{GUE}}(\tau) + K_{\text{Arith}}(\tau; \hat{\mathcal{M}}_6) + \mathcal{E}(\tau)
+    L(2, \chi_0) = \left| L(1, \chi_{12}) \right|^2
 \end{equation}
-Donde ambos regímenes dominan en escalas disjuntas y separadas por el Tiempo de Ehrenfest $t_E$:
+Esta igualdad ($R_1=1$) implica que la densidad espectral (LHS) es generada íntegramente por la interferencia constructiva de las amplitudes de fase (RHS), sin pérdidas por decoherencia ($R_k \to 0$ para $k>1$). Físicamente, esto define a $\Z/6\Z$ como un \textbf{Estado Coherente Aritmético}.
+\end{lema}
+
+\subsection{Teorema de Desacoplamiento Asintótico}
+
+\begin{teorema}[Dualidad Tiempo-Energía y Coexistencia]
+El Factor de Forma Espectral admite una descomposición ortogonal en el dominio del tiempo logarítmico $\tau$:
+\begin{equation}
+    K(\tau) = K_{\text{GUE}}(\tau) + \mathcal{A}_{\text{coh}}(\tau) + \mathcal{E}(\tau)
+\end{equation}
+donde los regímenes se desacoplan debido a la naturaleza del estado coherente:
 
 \begin{enumerate}
-    \item \textbf{Régimen Microscópico ($\tau \to 0$):} Dominio de la Universalidad.
-    \begin{equation}
-        \lim_{N \to \infty} K(\tau) = \min(1, \tau) \quad (\text{Ley de Montgomery-Odlyzko})
-    \end{equation}
-    En este límite, la estructura modular es invisible ($\hat{\mathcal{M}}_6$ se desacopla) y el sistema es indistinguible de un ensemble aleatorio.
+    \item \textbf{Régimen Microscópico ($\tau \to 0$):} Dominio GUE.
+    La coherencia de fase global se promedia a cero debido a las fluctuaciones rápidas. El sistema exhibe repulsión de niveles universal:
+    \[ K_{\text{GUE}}(\tau) \sim \tau \]
     
-    \item \textbf{Régimen Macroscópico ($\tau = \ln p$):} Dominio de la Resonancia Modular.
-    Para tiempos discretos $\tau_p$, el término aritmético diverge del fondo GUE:
+    \item \textbf{Régimen Macroscópico ($\tau = \ln p$):} Resonancia Aritmética.
+    En los tiempos de recurrencia de Poincaré $\tau_p$, la identidad de coherencia fuerza una interferencia constructiva masiva. La amplitud del término aritmético viene dada por la traza del operador modular:
     \begin{equation}
-        K_{\text{Arith}}(\tau_p) \propto \sum_{n} \delta(\tau - n\ln p) \cdot \bra{p}\hat{\mathcal{M}}_6\ket{p}
+        \mathcal{A}_{\text{coh}}(\tau_p) \propto \sum_{n} \delta(\tau - n\ln p) \cdot \bra{p}\hat{\mathcal{M}}_6\ket{p}
     \end{equation}
-    Aquí, la rigidez de $\Z/6\Z$ rompe la universalidad GUE, imponiendo picos de coherencia (''cicatrices cuánticas'') sobre el mar de caos.
+    Gracias a que $L(2) = L(1)^2$, la señal en este canal posee una Relación Señal-Ruido (SNR) máxima, permitiendo que la estructura $\Z/6\Z$ ''perfore'' el fondo de ruido GUE.
 \end{enumerate}
 \end{teorema}
 
-\begin{proof}[Esbozo de la Demostración]
-La fórmula de la traza de Gutzwiller para el sistema de Riemann relaciona la densidad espectral $d(E)$ con una suma sobre primos:
-\[ d(E) \approx \bar{d}(E) - \frac{1}{\pi} \sum_p \sum_{k=1}^\infty \frac{\ln p}{p^{k/2}} \cos(E k \ln p) \]
-El término $\bar{d}(E)$ (Weyl) es suave. La información del caos y del orden reside en la suma oscilatoria.
-
-1. \textbf{Límite Local (GUE):} Al analizar correlaciones de corto alcance (diferencias de energía $\Delta E \to 0$), aplicamos la aproximación diagonal. Las fases cruzadas $\exp(i E (\ln p - \ln q))$ oscilan rápidamente y se promedian a cero para $p \neq q$. Lo que queda es el término de ''auto-interferencia'', que reproduce universalmente el kernel seno de GUE:
-\[ 1 - \left(\frac{\sin(\pi \Delta E)}{\pi \Delta E}\right)^2 \]
-Esto explica por qué localmente los ceros parecen un gas aleatorio: la estructura modular se lava por interferencia destructiva de alta frecuencia.
-
-2. \textbf{Límite Global (Modular):} Al tomar la transformada de Fourier (SFF), ''congelamos'' las oscilaciones en tiempos específicos $\tau = \ln p$. En estos instantes, la fase se vuelve estacionaria. El operador $\hat{\mathcal{M}}_6$ entra en juego porque la densidad de primos (la amplitud de los picos) es estrictamente cero en los canales prohibidos.
-La ''aleatoriedad'' de GUE es, por tanto, el resultado de proyectar una estructura cristalina compleja (los primos en $\Z/6\Z$) sobre una base que no es propia (la base de energía local).
-\end{proof}
-
-\begin{corolario}[Principio de Incertidumbre Aritmética]
-No se puede observar simultáneamente la repulsión de niveles (GUE) y la estructura modular ($\Z/6\Z$) con precisión arbitraria.
-\begin{equation}
-    \Delta E_{\text{local}} \cdot \Delta \tau_{\text{modular}} \ge \frac{1}{2}
-\end{equation}
-Para ver la criba $\Z/6\Z$, necesitamos tiempos largos ($\Delta \tau$ grande), lo que borra la resolución de energía local ($\Delta E$ grande), haciendo emerger los picos primos. Para ver GUE, necesitamos precisión de energía ($\Delta E$ pequeña), lo que restringe nuestra ventana temporal ($\Delta \tau$ pequeña), ocultando la estructura modular.
+\begin{corolario}[Estabilidad del Vacío Modular]
+La ''rigidez'' de los huecos espectrales en los canales prohibidos ($2,3,4 \dots$) es una consecuencia directa de la exactitud de la identidad $L(2)=[L(1)]^2$. Cualquier desviación de esta identidad (como ocurre en módulos superiores donde $R_k \neq 1$) introduciría ''fugas'' de probabilidad, permitiendo la contaminación del vacío modular por el caos GUE. La pureza del 6 garantiza la separación perfecta.
 \end{corolario}
 
 \section{Algoritmos de Análisis Espectral}

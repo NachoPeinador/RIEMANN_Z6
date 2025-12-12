@@ -132,14 +132,16 @@ Este trabajo utiliza un modelo de licenciamiento dual para proteger la propiedad
 
   🔬 Investigación y Educación (Open Science)
   
-      Licencia: PolyForm Noncommercial 1.0.0
+      Licencia: PolyForm Noncommercial 1.0.0.
       Permitido: Replicación académica, enseñanza, uso personal.
+  
 
   💼 Uso Comercial (Algoritmos de Cribado)
   
       Cualquier uso de la arquitectura de cribado $\mathbb{Z}/6\mathbb{Z}$ o variantes derivadas para fines comerciales (criptoanálisis, optimización industrial) requiere permiso explícito.
       
       Ver COPYRIGHT.md.
+
 ---
       
 Última actualización: Diciembre 2025

@@ -124,6 +124,8 @@ Email: joseignacio.peinador@gmail.com
 
 Twitter/X: @todos_lumpen
 
+---
+
 ⚖️ Licencia
 
 Este trabajo utiliza un modelo de licenciamiento dual para proteger la propiedad intelectual de los algoritmos de optimización:
@@ -138,6 +140,7 @@ Este trabajo utiliza un modelo de licenciamiento dual para proteger la propiedad
       Cualquier uso de la arquitectura de cribado $\mathbb{Z}/6\mathbb{Z}$ o variantes derivadas para fines comerciales (criptoanálisis, optimización industrial) requiere permiso explícito.
       
       Ver COPYRIGHT.md.
+---
       
 Última actualización: Diciembre 2025
 

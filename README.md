@@ -121,6 +121,7 @@ Peinador Sala, J. I. (2025). Dualidad Espectral-Aritmética: Coherencia de Fase 
 Para discusiones académicas, colaboraciones o consultas sobre los algoritmos de cribado:
 
 Email: joseignacio.peinador@gmail.com
+
 Twitter/X: @todos_lumpen
 
 ⚖️ Licencia
@@ -129,11 +130,13 @@ Este trabajo utiliza un modelo de licenciamiento dual para proteger la propiedad
 
   🔬 Investigación y Educación (Open Science)
   
-      Licencia: PolyForm Noncommercial 1.0.0Permitido: Replicación académica, enseñanza, uso personal.
+      Licencia: PolyForm Noncommercial 1.0.0
+      Permitido: Replicación académica, enseñanza, uso personal.
 
   💼 Uso Comercial (Algoritmos de Cribado)
   
       Cualquier uso de la arquitectura de cribado $\mathbb{Z}/6\mathbb{Z}$ o variantes derivadas para fines comerciales (criptoanálisis, optimización industrial) requiere permiso explícito.
+      
       Ver COPYRIGHT.md.
       
 Última actualización: Diciembre 2025

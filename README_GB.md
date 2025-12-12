@@ -1,8 +1,3 @@
-Here is the full **English translation** of your `README.md`, maintaining the professional formatting, badges, and scientific tone.
-
-I have adapted terms like "Innovaciones Nucleares" to "Core Innovations" and ensured the mathematical terminology (GUE, Lattice, Waveguide) is accurate in English.
-
-````markdown
 # 🌌 Riemann-Z6: The Arithmetic Crystal
 
 ### Decoding Spectral Duality for Factorization and Mersenne Primes

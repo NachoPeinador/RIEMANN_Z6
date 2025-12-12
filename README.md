@@ -9,9 +9,9 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.PLACEHOLDER-blue)](https://doi.org/)
 
 **Autor**: José Ignacio Peinador Sala
-**Contacto**: joseignacio.peinador@gmail.com
-**ORCID**: [0009-0008-1822-3452](https://orcid.org/0009-0008-1822-3452)
-
+**-Contacto**: joseignacio.peinador@gmail.com
+**-ORCID**: [0009-0008-1822-3452](https://orcid.org/0009-0008-1822-3452)
+**-Twitter/X: [@todos_lumpen](https://twitter.com/todos_lumpen/status/950475430661902340?ref_src=twsrc%5Etfw)
 ---
 
 ## 🔍 Visión
@@ -114,15 +114,6 @@ Este trabajo no contradice a Montgomery-Odlyzko; lo completa. Introducimos el En
 ```
 Peinador Sala, J. I. (2025). Dualidad Espectral-Aritmética: Coherencia de Fase Modular en el Espectro de Riemann (Versión v1). Zenodo. [https://doi.org/](https://doi.org/)[TU_DOI_AQUI]
 ```
----
-
-## 📫 Contacto
-
-Para discusiones académicas, colaboraciones o consultas sobre los algoritmos de cribado:
-
-Email: joseignacio.peinador@gmail.com
-
-Twitter/X: @todos_lumpen
 
 ---
 

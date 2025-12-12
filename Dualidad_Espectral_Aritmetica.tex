@@ -1,5 +1,5 @@
 \documentclass[12pt, a4paper]{article}
-
+\usepackage{hyphenat}
 % --- PAQUETES Y CONFIGURACIÓN ---
 \usepackage[utf8]{inputenc}
 \usepackage[spanish, es-tabla]{babel}
@@ -17,7 +17,7 @@
 \usepackage{bm}
 \usepackage{dsfont}
 \usepackage{tikz}
-\usetikzlibrary{quantikz, positioning, shapes}
+\usetikzlibrary{quantikz2, positioning, shapes}
 \usepackage{braket}
 \usepackage{siunitx}
 \usepackage{caption}
@@ -749,6 +749,19 @@ Este valor coincide con precisión de laboratorio con la predicción teórica de
 
 La saturación del SNR a $12.69 \pm 0.01$, lejos de ser un artefacto numérico, aparece como la firma experimental de un punto fijo no trivial en el espacio de ensembles de matrices. La identidad $L(2,\chi_0^{(6)}) = (\pi/3)^2$ proporciona la piedra angular analítica que sostiene esta estructura, revelando que el espectro de Riemann opera como un \textbf{Canal sin Ruido} optimizado para la transmisión de información aritmética.
 
+\section{Agradecimientos}
+El autor agradece a la comunidad de desarrollo de software de código abierto, en particular a los creadores de \textsc{Python}, \textsc{NumPy}, \textsc{SciPy}, \textsc{Matplotlib} y \textsc{Numba}, cuya tecnología de compilación JIT ha sido instrumental para la validación computacional de los algoritmos de cribado. Se reconoce el papel fundamental de la plataforma Google Colab para la ejecución de los recursos computacionales de alto rendimiento. Asimismo, se agradece el uso de Modelos de Lenguaje (LLMs) avanzados como asistentes en la revisión dialéctica, refactorización de código y auditoría técnica del manuscrito.
+
+\section{Declaración de Financiación}
+Esta investigación no ha recibido financiación externa específica de agencias de los sectores público, comercial o sin fines de lucro, habiendo sido realizada en su totalidad con recursos propios del autor como investigador independiente.
+
+\section{Disponibilidad de Datos y Reproducibilidad}
+El código fuente completo para la replicación de los experimentos, incluyendo el \textit{Reactor de Factorización Modular}, el \textit{Radar de Mersenne} y las simulaciones de Monte Carlo para el Ensemble Riemann-GUE, está disponible en el repositorio público:
+\begin{center}
+\url{https://github.com/NachoPeinador/RIEMANN_Z6}
+\end{center}
+Los datos espectrales utilizados corresponden al conjunto de los primeros $10^5$ ceros no triviales de la función zeta de Riemann, obtenidos de la base de datos \textit{L-functions and Modular Forms Database} (LMFDB) y disponibles para descarga directa en el repositorio mencionado.
+
 % ----------------------------------------------------------------------
 % APÉNDICES
 % ----------------------------------------------------------------------
@@ -847,6 +860,8 @@ La Tabla \ref{tab:robustez_actualizada} resume los resultados para $N=10^5$ cero
 \centering
 \caption{Validación de Robustez para la Coherencia de Fase (Test KS, $x=7$)}
 \label{tab:robustez_actualizada}
+% Ajustamos el tamaño al ancho de la columna
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{@{}lcc@{}}
 \toprule
 \textbf{Condición de Prueba} & \textbf{$p$-valor KS obtenido} & \textbf{Interpretación} \\
@@ -860,7 +875,8 @@ Ruido aditivo $\mathcal{N}(0, 10^{-6})$ & $5.12 \times 10^{-75}$ & Invariante a 
 Ensemble GUE Puro (Simulado) & $0.42$ & Compatible con ruido \\
 Ensemble Riemann-GUE (Propuesto) & $0.27$ (vs GUE local) & Indistinguibilidad local \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \begin{observacion}

@@ -101,7 +101,7 @@ jupyter notebook Notebooks/Validacion_Experimental_Completa.ipynb
 
 ---
 
-## 🎯 Filosofía Científica"
+## 🎯 Filosofía Científica
 
 La universalidad del caos es solo una fachada asintótica. A baja frecuencia, el esqueleto de los números primos impone una geometría rígida e ineludible.
 Este trabajo no contradice a Montgomery-Odlyzko; lo completa. Introducimos el Ensemble Riemann-GUE, un modelo matricial que respeta tanto la libertad asintótica (caos local) como el determinismo aritmético (orden global), cerrando una brecha de 50 años en la física matemática.
@@ -116,9 +116,12 @@ Peinador Sala, J. I. (2025). Dualidad Espectral-Aritmética: Coherencia de Fase 
 
 ## 📫 ContactoPara discusiones académicas, colaboraciones o consultas sobre los algoritmos de cribado:
 
-Email: joseignacio.peinador@gmail.comTwitter/X: @todos_lumpen
+Email: joseignacio.peinador@gmail.com
+Twitter/X: @todos_lumpen
 
 ⚖️ LicenciaEste trabajo utiliza un modelo de licenciamiento dual para proteger la propiedad intelectual de los algoritmos de optimización:
+
 🔬 Investigación y Educación (Open Science)Licencia: PolyForm Noncommercial 1.0.0Permitido: Replicación académica, enseñanza, uso personal.
+
 💼 Uso Comercial (Algoritmos de Cribado)Cualquier uso de la arquitectura de cribado $\mathbb{Z}/6\mathbb{Z}$ o variantes derivadas para fines comerciales (criptoanálisis, optimización industrial) requiere permiso explícito. Ver COPYRIGHT.md.Última actualización: Diciembre 2025
 

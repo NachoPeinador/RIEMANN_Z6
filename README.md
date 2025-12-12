@@ -17,8 +17,14 @@ A baja frecuencia, el espectro de Riemann se revela no como un sistema estocást
 
 ### 🚀 De la Teoría a la Utilidad
 Esta "memoria aritmética" permite transformar las matemáticas puras en ingeniería computacional:
-* **Factorización:** "Tunelización" a través de canales prohibidos (-33% coste).
-* **Predicción:** Localización determinista de Primos de Mersenne (Canal 1).
+* **Factorización:** "Tunelización" a través de canales prohibidos (**-33% coste**).
+* **Predicción:** Localización determinista de Primos de Mersenne (**Canal 1**).
+
+<p align="center">
+  <img src="Images/figura_final_aplicaciones.png" alt="Validación Computacional: Factorización y Mersenne" width="100%">
+  <br>
+  <em>Figura 1. Validación Experimental: Reducción algorítmica exacta del 33% (Izda) y Colapso total de Mersenne en el Canal 1 (Dcha).</em>
+</p>
 
 > **El Paradigma del Cristal Aritmético**
 >

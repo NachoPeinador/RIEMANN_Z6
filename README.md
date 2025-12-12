@@ -162,30 +162,34 @@ Este proyecto propone una resolución dialéctica a la paradoja de 50 años entr
 
 ---
 
+## ⚖️ Modelo de Licenciamiento Dual
+
+Este proyecto adopta un enfoque híbrido para democratizar el descubrimiento científico protegiendo al mismo tiempo la propiedad intelectual de los algoritmos de optimización.
+
+### 🔬 1. Investigación y Open Science (Gratuito)
+[![License](https://img.shields.io/badge/License-PolyForm_Noncommercial-005CA9?style=for-the-badge&logo=open-source-initiative&logoColor=white)](./LICENSE)
+
+Diseñada para fomentar la colaboración académica sin riesgo de explotación comercial.
+* ✅ **Permitido:** Replicación de experimentos, uso educativo, forks personales, auditoría de código.
+* ❌ **Prohibido:** Uso en productos comerciales, servicios de pago, o integración en hardware propietario.
+
+---
+
+### 💼 2. Uso Comercial e Industrial (Restringido)
+[![Commercial](https://img.shields.io/badge/Commercial_Use-License_Required-B31B1B?style=for-the-badge&logo=unrealengine&logoColor=white)](./COPYRIGHT.md)
+
+Cualquier implementación de la arquitectura de cribado **$\mathbb{Z}/6\mathbb{Z}$** o sus derivadas para fines de lucro (ej. criptoanálisis, aceleración de hardware, optimización industrial) requiere un acuerdo de licencia explícito.
+
+> [!IMPORTANT]
+> **Aviso Legal:** La reducción del 33% en costes computacionales constituye una ventaja competitiva industrial. Para consultar los términos de uso o solicitar una exención comercial, revisa el archivo **[COPYRIGHT.md](./COPYRIGHT.md)**.
+
+---
+
 ## 📝 Citación
 ```
 Peinador Sala, J. I. (2025). Dualidad Espectral-Aritmética: Coherencia de Fase Modular en el Espectro de Riemann (Versión v1). Zenodo. [https://doi.org/](https://doi.org/)[TU_DOI_AQUI]
 ```
 
----
-
-⚖️ Licencia
-
-Este trabajo utiliza un modelo de licenciamiento dual para proteger la propiedad intelectual de los algoritmos de optimización:
-
-  🔬 Investigación y Educación (Open Science)
-  
-      Licencia: PolyForm Noncommercial 1.0.0.
-      Permitido: Replicación académica, enseñanza, uso personal.
-  
-
-  💼 Uso Comercial (Algoritmos de Cribado)
-  
-      Cualquier uso de la arquitectura de cribado $\mathbb{Z}/6\mathbb{Z}$ o variantes derivadas para fines comerciales (criptoanálisis, optimización industrial) requiere permiso explícito.
-      
-      Ver COPYRIGHT.md.
-
----
-      
+---      
 Última actualización: Diciembre 2025
 

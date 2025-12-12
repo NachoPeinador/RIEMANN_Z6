@@ -107,6 +107,7 @@ Este repositorio está organizado para garantizar la **reproducibilidad científ
 │
 ├── 📜 LICENSE                          # Modelo de Licenciamiento Dual
 └── ⚙️ requirements.txt                 # Dependencias (numpy, matplotlib, numba...)
+```
 
 ---
 
@@ -128,7 +129,9 @@ Ejecutar la Suite:
 clone [https://github.com/NachoPeinador/RIEMANN_Z6.git](https://github.com/NachoPeinador/RIEMANN_Z6.git)
 cd RIEMANN_Z6
 ```
-jupyter notebook Notebooks/Validacion_Experimental_Completa.ipynb
+
+Validacion Experimental Completa:
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-F37626.svg?style=flat&logo=Jupyter)]([https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Frugal_AI_Suite_Completa.ipynb](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb))
 
 
 ---

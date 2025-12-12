@@ -38,13 +38,17 @@ Desafiando el paradigma de que las fases espectrales son aleatorias a larga dist
 
 ### 1. La Identidad de Coherencia Cuadrática
 Demostramos analíticamente que la saturación del SNR obedece a la identidad exacta:
-$$L(2,\chi_0^{(6)}) = [L(1,\chi_{12})]^2 = \frac{\pi^2}{9}$$
+
+## $$L(2,\chi_0^{(6)}) = [L(1,\chi_{12})]^2 = \frac{\pi^2}{9}$$
+
 Esto implica que el módulo 6 tiene un **Factor de Ruido $R_1=1.0$**, actuando como un canal de transmisión perfecto para la información aritmética.
 
 ### 2. Reactor de Factorización Modular
+
 Implementación de un algoritmo de cribado que explota la **resonancia $\mathbb{Z}/6\mathbb{Z}$**. Al saltar los "canales prohibidos" ($0,2,3,4 \pmod 6$) donde el SNR espectral es nulo, logramos una reducción del espacio de búsqueda del **33.33%** respecto a la criba de impares estándar.
 
 ### 3. El Radar de Mersenne
+
 Descubrimiento de una **polarización estructural**: mientras los primos normales se distribuyen simétricamente (50/50) entre los canales 1 y 5, los Primos de Mersenne ($M_p = 2^p-1$) colapsan **exclusivamente** en el Canal 1, validando la hipótesis de rigidez espectral.
 
 ---

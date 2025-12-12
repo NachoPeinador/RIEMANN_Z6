@@ -81,24 +81,32 @@ Descubrimiento de una propiedad de **rigidez estructural** absoluta. Mientras lo
 
 ## 📁 Estructura del Repositorio
 
-```
-Papers/
-├── Dualidad-Espectral_Aritmetica.tex   # Artículo completo en formato LaTeX.
-└── Dualidad-Espectral_Aritmetica.pdf   # Artículo completo como PDF
+Este repositorio está organizado para garantizar la **reproducibilidad científica total**.
 
-Notebooks/
-├── Dualidad-Espectral_Aritmetica_Complete_Suite.ipynb    # Validación end-to-end:
-│   ├── 1. Detección de Anomalía (Tests KS con p ~ 10^-75)
-│   ├── 2. Dinámica del SNR (Modelo de saturación a 12.69)
-│   ├── 3. Validación Riemann-GUE (Simulación Monte Carlo p=0.27)
-│   ├── 4. Verificación Analítica (Identidad exacta L(2) = π²/9)
-│   ├── 5. Termodinámica de Información (Cálculo de ROI óptimo)
-│   ├── 6. Reactor de Factorización (Benchmark: -33% operaciones)
-│   └── 7. Radar de Mersenne (Visualización de Ruptura de Simetría)
-└── zetazeros.txt  # Dataset (Primeros 100k ceros)
-
-Images/    # Figuras y visualizaciones
-```
+```text
+.
+├── 📂 Papers/                          # Documentación Académica y Teórica
+│   ├── 📄 Dualidad_Espectral.pdf       # ⭐️ El Paper (Versión Final Revisada)
+│   └── 📝 Dualidad_Espectral.tex       # Código fuente LaTeX (Compilable)
+│
+├── 📂 Notebooks/                       # Laboratorio Computacional (Python + Numba)
+│   ├── 📓 Validation_Suite.ipynb       # 🔬 El "Core" de la investigación (7 Fases):
+│   │   ├── 1. Anomalía Estadística (Tests KS con p ~ 10⁻⁷⁵)
+│   │   ├── 2. Dinámica del SNR (Saturación exacta a 12.69)
+│   │   ├── 3. Modelo Riemann-GUE (Validación Monte Carlo)
+│   │   ├── 4. Verificación Analítica (Identidad L(2) = π²/9)
+│   │   ├── 5. Termodinámica (Cálculo de ROI óptimo 0.105)
+│   │   ├── 6. Reactor de Factorización (Benchmark: -33% ops)
+│   │   └── 7. Radar de Mersenne (Ruptura de Simetría)
+│   │
+│   └── 💾 zetazeros.txt                # Dataset (LMFDB - Primeros 100k ceros)
+│
+├── 📂 Images/                          # Visualizaciones en Alta Resolución
+│   ├── 📊 snr_saturation.png
+│   └── 📉 mersenne_symmetry.png
+│
+├── 📜 LICENSE                          # Modelo de Licenciamiento Dual
+└── ⚙️ requirements.txt                 # Dependencias (numpy, matplotlib, numba...)
 
 ---
 

@@ -61,10 +61,8 @@ Descubrimiento de una **polarización estructural**: mientras los primos normale
 
 ```
 Papers/
-├── Dualidad-Espectral_Aritmetica.tex   # Artículo completo en español y formato LaTeX.
-└── Dualidad-Espectral_Aritmetica.pdf   # Artículo completo en español compilado como PDF
-└── Spectral-Arithmetic_Duality.tex   # Artículo completo en inglés y formato LaTeX.
-└── Spectral-Arithmetic_Duality.pdf   # Artículo completo en inglés compilado como PDF
+├── Dualidad-Espectral_Aritmetica.tex   # Artículo completo en formato LaTeX.
+└── Dualidad-Espectral_Aritmetica.pdf   # Artículo completo como PDF
 
 Notebooks/
 ├── Dualidad-Espectral_Aritmetica_Complete_Suite.ipynb    # Validación end-to-end:
@@ -94,10 +92,14 @@ numpy>=1.21
 matplotlib>=3.5
 scipy>=1.7
 numba>=0.55  # Crítico para el factorizador
-Ejecutar la Suite:Bashgit clone [https://github.com/tu-usuario/riemann-z6.git](https://github.com/tu-usuario/riemann-z6.git)
-cd riemann-z6
-jupyter notebook Notebooks/Validacion_Experimental_Completa.ipynb
 ```
+Ejecutar la Suite:
+```bash
+clone [https://github.com/NachoPeinador/RIEMANN_Z6.git](https://github.com/NachoPeinador/RIEMANN_Z6.git)
+cd RIEMANN_Z6
+```
+jupyter notebook Notebooks/Validacion_Experimental_Completa.ipynb
+
 
 ---
 

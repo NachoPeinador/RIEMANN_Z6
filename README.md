@@ -111,28 +111,40 @@ Este repositorio está organizado para garantizar la **reproducibilidad científ
 
 ---
 
-## 🚀 Reproducibilidad
+## 🚀 Reproducibilidad y Benchmarking
 
-Este proyecto prioriza la ciencia reproducible. El código utiliza `numba` para garantizar que los benchmarks de tiempo sean comparaciones justas (JIT vs JIT).
+Este proyecto prioriza la **ciencia reproducible**. Para garantizar que la comparación de rendimiento (-33%) sea justa, el código utiliza `numba` para compilar ambos algoritmos (Clásico y Riemann) a código máquina (JIT), eliminando el overhead del intérprete de Python.
 
-**Prerrequisitos:**
+### Opción A: Ejecución en la Nube (Recomendado)
+La forma más rápida de validar los resultados sin configurar un entorno local. Incluye la validación del SNR y la demostración de factorización.
 
-```bash
-python>=3.8
-numpy>=1.21
-matplotlib>=3.5
-scipy>=1.7
-numba>=0.55  # Crítico para el factorizador
-```
-Ejecutar la Suite:
-```bash
-clone [https://github.com/NachoPeinador/RIEMANN_Z6.git](https://github.com/NachoPeinador/RIEMANN_Z6.git)
-cd RIEMANN_Z6
-```
-
-### Validacion Experimental Completa:
 [![Open In Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad-Espectral_Aritmetica_Complete_Suite.ipynb)
 
+### Opción B: Instalación Local (Para Auditoría)
+
+Si deseas inspeccionar el código o ejecutarlo en tu propio hardware para validar los tiempos de CPU:
+
+**1. Clonar el Repositorio**
+```bash
+git clone [https://github.com/NachoPeinador/RIEMANN_Z6.git](https://github.com/NachoPeinador/RIEMANN_Z6.git)
+cd RIEMANN_Z6
+```
+**2. Instalar Dependencias Se recomienda usar un entorno virtual (venv o conda).**
+```bash
+pip install numpy matplotlib scipy numba jupyter
+```
+**3. Versiones Críticas El benchmarking JIT es sensible a las versiones. Se ha validado en:**
+```bash
+python      >= 3.8
+numpy       >= 1.21
+numba       >= 0.55  # CRÍTICO: Versiones anteriores pueden fallar en @njit(fastmath=True)
+matplotlib  >= 3.5
+```
+**4. Ejecutar la Suite**
+```bash
+jupyter notebook Notebooks/Dualidad-Espectral_Aritmetica_Complete_Suite.ipynb
+```
+Nota sobre el Hardware: Aunque los tiempos absolutos de factorización variarán según tu CPU (Intel/AMD/Apple Silicon), la ratio de reducción de operaciones (~33.33%) es una invariante matemática y debe mantenerse constante en cualquier arquitectura.
 
 ---
 

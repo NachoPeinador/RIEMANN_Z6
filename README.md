@@ -186,10 +186,30 @@ Cualquier implementación de la arquitectura de cribado **$\mathbb{Z}/6\mathbb{Z
 ---
 
 ## 📝 Citación
-```
-Peinador Sala, J. I. (2025). Dualidad Espectral-Aritmética: Coherencia de Fase Modular en el Espectro de Riemann (Versión v1). Zenodo. [https://doi.org/](https://doi.org/)[TU_DOI_AQUI]
-```
 
----      
-Última actualización: Diciembre 2025
+Si utilizas la arquitectura **Riemann-Z6**, el **Reactor de Factorización** o los hallazgos sobre **Mersenne** en tu investigación, por favor cita el trabajo original:
+
+**BibTeX (LaTeX):**
+```bibtex
+@misc{peinador2025riemann,
+  author = {Peinador Sala, José Ignacio},
+  title = {Dualidad Espectral-Aritmética: Coherencia de Fase Modular en el Espectro de Riemann},
+  year = {2025},
+  publisher = {Zenodo},
+  version = {v1},
+  doi = {10.5281/zenodo.PLACEHOLDER},
+  url = {[https://github.com/NachoPeinador/RIEMANN_Z6](https://github.com/NachoPeinador/RIEMANN_Z6)}
+}
+```
+**APA:**
+> Peinador Sala, J. I. (2025). *Dualidad Espectral-Aritmética: Coherencia de Fase Modular en el Espectro de Riemann*. GitHub/Zenodo. https://doi.org/[TU_DOI_AQUI]
+
+---
+
+<div align="center">
+  <br>
+  <b>Last Update:</b> December 2025 &nbsp;|&nbsp; <b>Status:</b> Research Complete &nbsp;|&nbsp; Made with ⚛️ & 🐍
+  <br><br>
+</div>
+
 

@@ -8,7 +8,7 @@
 [![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-F37626.svg?style=flat&logo=Jupyter)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Validacion_Experimental_Completa.ipynb)
 [![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.PLACEHOLDER-blue)](https://doi.org/)
 
-**Autor**: José Ignacio Peinador Sala **-Contacto**: joseignacio.peinador@gmail.com **-ORCID**: [0009-0008-1822-3452](https://orcid.org/0009-0008-1822-3452) **-Twitter/X: [@todos_lumpen](https://twitter.com/todos_lumpen/status/950475430661902340?ref_src=twsrc%5Etfw)
+**Autor**: José Ignacio Peinador Sala **-Contacto**: joseignacio.peinador@gmail.com **-ORCID**: [0009-0008-1822-3452](https://orcid.org/0009-0008-1822-3452) **-Twitter/X**: [@todos_lumpen](https://twitter.com/todos_lumpen/status/950475430661902340?ref_src=twsrc%5Etfw)
 ---
 
 ## 🔍 Visión

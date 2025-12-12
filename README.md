@@ -1,4 +1,6 @@
-# 🌌 Dualidad Espectral-Aritmética: La Estructura Oculta $\mathbb{Z}/6\mathbb{Z}$ en Riemann
+# 🌌 Riemann-Z6: El Cristal Aritmético
+
+### Decodificando la Dualidad Espectral para Factorización y Primos de Mersenne
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-00A3E0?style=for-the-badge&logo=python&logoColor=white)](https://numba.pydata.org/) [![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Validacion_Experimental_Completa.ipynb) [![Status](https://img.shields.io/badge/Status-Peer_Review_Ready-4c1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6)
 [![Email](https://img.shields.io/badge/Email-Contactar-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:joseignacio.peinador@gmail.com) [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452) [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)

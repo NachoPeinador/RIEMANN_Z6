@@ -19,10 +19,7 @@ Desafiando el paradigma de que las fases espectrales son aleatorias a larga dist
 
 ## 📊 Validación Experimental ($N=10^5$ Ceros)
 
-[![Statistical Significance](https://img.shields.io/badge/p--value-10^-75-purple)]()
-[![SNR Saturation](https://img.shields.io/badge/SNR_Saturation-12.69-blue)]()
-[![Algorithm Speedup](https://img.shields.io/badge/Factorization_Speedup-33.33%25-green)]()
-[![Mersenne Symmetry](https://img.shields.io/badge/Mersenne_Polarization-100%25-red)]()
+[![Statistical Significance](https://img.shields.io/badge/P--VALUE-10⁻⁷⁵-702082?style=for-the-badge)](https://en.wikipedia.org/wiki/P-value) [![SNR Saturation](https://img.shields.io/badge/SNR_SATURATION-12.69-007EC6?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Validacion_Experimental_Completa.ipynb) [![Algorithm Speedup](https://img.shields.io/badge/FACTORIZATION_SPEEDUP-33.33%25-4C1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Validacion_Experimental_Completa.ipynb) [![Mersenne Symmetry](https://img.shields.io/badge/MERSENNE_POLARIZATION-100%25-D00000?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Validacion_Experimental_Completa.ipynb)
 
 | Dominio | Métrica | Resultado | Implicación |
 | :--- | :--- | :--- | :--- |

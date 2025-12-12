@@ -39,7 +39,7 @@ Desafiando el paradigma de que las fases espectrales son aleatorias a larga dist
 ### 1. La Identidad de Coherencia Cuadrática
 Demostramos analíticamente que la saturación del SNR obedece a la identidad exacta:
 
-                  ## $$L(2,\chi_0^{(6)}) = [L(1,\chi_{12})]^2 = \frac{\pi^2}{9}$$
+##               $$L(2,\chi_0^{(6)}) = [L(1,\chi_{12})]^2 = \frac{\pi^2}{9}$$
 
 Esto implica que el módulo 6 tiene un **Factor de Ruido $R_1=1.0$**, actuando como un canal de transmisión perfecto para la información aritmética.
 

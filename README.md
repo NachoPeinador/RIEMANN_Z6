@@ -119,9 +119,16 @@ Peinador Sala, J. I. (2025). Dualidad Espectral-Aritmética: Coherencia de Fase 
 Email: joseignacio.peinador@gmail.com
 Twitter/X: @todos_lumpen
 
-⚖️ LicenciaEste trabajo utiliza un modelo de licenciamiento dual para proteger la propiedad intelectual de los algoritmos de optimización:
+⚖️ Licencia
 
-🔬 Investigación y Educación (Open Science)Licencia: PolyForm Noncommercial 1.0.0Permitido: Replicación académica, enseñanza, uso personal.
+Este trabajo utiliza un modelo de licenciamiento dual para proteger la propiedad intelectual de los algoritmos de optimización:
 
-💼 Uso Comercial (Algoritmos de Cribado)Cualquier uso de la arquitectura de cribado $\mathbb{Z}/6\mathbb{Z}$ o variantes derivadas para fines comerciales (criptoanálisis, optimización industrial) requiere permiso explícito. Ver COPYRIGHT.md.Última actualización: Diciembre 2025
+  🔬 Investigación y Educación (Open Science)
+      Licencia: PolyForm Noncommercial 1.0.0Permitido: Replicación académica, enseñanza, uso personal.
+
+  💼 Uso Comercial (Algoritmos de Cribado)
+      Cualquier uso de la arquitectura de cribado $\mathbb{Z}/6\mathbb{Z}$ o variantes derivadas para fines comerciales (criptoanálisis, optimización industrial) requiere permiso explícito.
+      Ver COPYRIGHT.md.
+      
+Última actualización: Diciembre 2025
 

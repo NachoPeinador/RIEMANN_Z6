@@ -59,15 +59,26 @@ Descubrimiento de una **polarización estructural**: mientras los primos normale
 
 ## 📁 Estructura del Repositorio
 
-Papers/├── Dualidad_Espectral_Aritmetica.pdf   # Artículo completo (LaTeX compilado)
-       └── Dualidad_Espectral_Aritmetica.tex   # Código fuenteNotebooks/
-       ├── Validacion_Experimental_Completa.ipynb  # Suite completa de reproducción:
-       │   ├── 1. Análisis espectral (SNR 12.69)   
-       │   ├── 2. Simulación Monte Carlo (Riemann-GUE)   
-       │   ├── 3. Reactor de Factorización (Demo de eficiencia)   
-       │   └── 4. Radar de Mersenne (Visualización de simetría)
-       └── zetazeros.txt                       # Dataset (Primeros 100k ceros)
-Images/                                 # Gráficas generadas
+```
+Papers/
+├── Dualidad-Espectral_Aritmetica.tex   # Artículo completo en español y formato LaTeX.
+└── Dualidad-Espectral_Aritmetica.pdf   # Artículo completo en español compilado como PDF
+└── Spectral-Arithmetic_Duality.tex   # Artículo completo en inglés y formato LaTeX.
+└── Spectral-Arithmetic_Duality.pdf   # Artículo completo en inglés compilado como PDF
+
+Notebooks/
+├── Dualidad-Espectral_Aritmetica_Complete_Suite.ipynb    # Validación end-to-end:
+│   ├── 1. Detección de Anomalía (Tests KS con p ~ 10^-75)
+│   ├── 2. Dinámica del SNR (Modelo de saturación a 12.69)
+│   ├── 3. Validación Riemann-GUE (Simulación Monte Carlo p=0.27)
+│   ├── 4. Verificación Analítica (Identidad exacta L(2) = π²/9)
+│   ├── 5. Termodinámica de Información (Cálculo de ROI óptimo)
+│   ├── 6. Reactor de Factorización (Benchmark: -33% operaciones)
+│   └── 7. Radar de Mersenne (Visualización de Ruptura de Simetría)
+└── zetazeros.txt  # Dataset (Primeros 100k ceros)
+
+Images/    # Figuras y visualizaciones
+```
 
 ---
 

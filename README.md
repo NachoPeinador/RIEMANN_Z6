@@ -130,8 +130,8 @@ clone [https://github.com/NachoPeinador/RIEMANN_Z6.git](https://github.com/Nacho
 cd RIEMANN_Z6
 ```
 
-Validacion Experimental Completa:
-[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-F37626.svg?style=flat&logo=Jupyter)]([https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Frugal_AI_Suite_Completa.ipynb](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb))
+### Validacion Experimental Completa:
+[![Open In Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad-Espectral_Aritmetica_Complete_Suite.ipynb)
 
 
 ---

@@ -59,7 +59,16 @@ Descubrimiento de una **polarización estructural**: mientras los primos normale
 
 ## 📁 Estructura del Repositorio
 
-Papers/├── Dualidad_Espectral_Aritmetica.pdf   # Artículo completo (LaTeX compilado)└── Dualidad_Espectral_Aritmetica.tex   # Código fuenteNotebooks/├── Validacion_Experimental_Completa.ipynb  # Suite completa de reproducción:│   ├── 1. Análisis espectral (SNR 12.69)│   ├── 2. Simulación Monte Carlo (Riemann-GUE)│   ├── 3. Reactor de Factorización (Demo de eficiencia)│   └── 4. Radar de Mersenne (Visualización de simetría)└── zetazeros.txt                       # Dataset (Primeros 100k ceros)Images/                                 # Gráficas generadas
+Papers/├── Dualidad_Espectral_Aritmetica.pdf   # Artículo completo (LaTeX compilado)
+       └── Dualidad_Espectral_Aritmetica.tex   # Código fuenteNotebooks/
+       ├── Validacion_Experimental_Completa.ipynb  # Suite completa de reproducción:
+       │   ├── 1. Análisis espectral (SNR 12.69)   
+       │   ├── 2. Simulación Monte Carlo (Riemann-GUE)   
+       │   ├── 3. Reactor de Factorización (Demo de eficiencia)   
+       │   └── 4. Radar de Mersenne (Visualización de simetría)
+       └── zetazeros.txt                       # Dataset (Primeros 100k ceros)
+Images/                                 # Gráficas generadas
+
 ---
 
 ## 🚀 Reproducibilidad
@@ -76,8 +85,11 @@ numba>=0.55  # Crítico para el factorizador
 Ejecutar la Suite:Bashgit clone [https://github.com/tu-usuario/riemann-z6.git](https://github.com/tu-usuario/riemann-z6.git)
 cd riemann-z6
 jupyter notebook Notebooks/Validacion_Experimental_Completa.ipynb
-🎯 Filosofía Científica"La universalidad del caos es solo una fachada asintótica. A baja frecuencia, el esqueleto de los números primos impone una geometría rígida e ineludible."Este trabajo no contradice a Montgomery-Odlyzko; lo completa. Introducimos el Ensemble Riemann-GUE, un modelo matricial que respeta tanto la libertad asintótica (caos local) como el determinismo aritmético (orden global), cerrando una brecha de 50 años en la física matemática.📝 CitaciónFragmento de códigoPeinador Sala, J. I. (2025). Dualidad Espectral-Aritmética: Coherencia de Fase Modular en el Espectro de Riemann (Versión v1). Zenodo. [https://doi.org/](https://doi.org/)[TU_DOI_AQUI]
-📫 ContactoPara discusiones académicas, colaboraciones o consultas sobre los algoritmos de cribado:Email: joseignacio.peinador@gmail.comTwitter/X: @todos_lumpen⚖️ LicenciaEste trabajo utiliza un modelo de licenciamiento dual para proteger la propiedad intelectual de los algoritmos de optimización:🔬 Investigación y Educación (Open Science)Licencia: PolyForm Noncommercial 1.0.0Permitido: Replicación académica, enseñanza, uso personal.💼 Uso Comercial (Algoritmos de Cribado)Cualquier uso de la arquitectura de cribado $\mathbb{Z}/6\mathbb{Z}$ o variantes derivadas para fines comerciales (criptoanálisis, optimización industrial) requiere permiso explícito. Ver COPYRIGHT.md.Última actualización: Diciembre 2025
+
+---
+
+## 🎯 Filosofía Científica"La universalidad del caos es solo una fachada asintótica. A baja frecuencia, el esqueleto de los números primos impone una geometría rígida e ineludible."Este trabajo no contradice a Montgomery-Odlyzko; lo completa. Introducimos el Ensemble Riemann-GUE, un modelo matricial que respeta tanto la libertad asintótica (caos local) como el determinismo aritmético (orden global), cerrando una brecha de 50 años en la física matemática.📝 CitaciónFragmento de códigoPeinador Sala, J. I. (2025). Dualidad Espectral-Aritmética: Coherencia de Fase Modular en el Espectro de Riemann (Versión v1). Zenodo. [https://doi.org/](https://doi.org/)[TU_DOI_AQUI]
+## 📫 ContactoPara discusiones académicas, colaboraciones o consultas sobre los algoritmos de cribado:Email: joseignacio.peinador@gmail.comTwitter/X: @todos_lumpen⚖️ LicenciaEste trabajo utiliza un modelo de licenciamiento dual para proteger la propiedad intelectual de los algoritmos de optimización:🔬 Investigación y Educación (Open Science)Licencia: PolyForm Noncommercial 1.0.0Permitido: Replicación académica, enseñanza, uso personal.💼 Uso Comercial (Algoritmos de Cribado)Cualquier uso de la arquitectura de cribado $\mathbb{Z}/6\mathbb{Z}$ o variantes derivadas para fines comerciales (criptoanálisis, optimización industrial) requiere permiso explícito. Ver COPYRIGHT.md.Última actualización: Diciembre 2025
 ### 💡 Por qué este README es potente:
 
 1.  **Narrativa "From Zero to Hero":** Empieza con el problema teórico (caos vs orden) y termina con soluciones prácticas (factorización, Mersenne).

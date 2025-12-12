@@ -1,13 +1,6 @@
 # 🌌 Dualidad Espectral-Aritmética: La Estructura Oculta $\mathbb{Z}/6\mathbb{Z}$ en Riemann
 
-[![License](https://img.shields.io/badge/License-PolyForm_Noncommercial_1.0.0-blue.svg)](https://polyformproject.org/licenses/noncommercial/1.0.0/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-green.svg)]()
-[![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-orange.svg)]()
-[![Status](https://img.shields.io/badge/Status-Peer_Review_Ready-brightgreen.svg)]()
-[![Papers](https://img.shields.io/badge/📄-Read_Paper-yellow.svg)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Dualidad_Espectral_Aritmetica.pdf)
-[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-F37626.svg?style=flat&logo=Jupyter)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Validacion_Experimental_Completa.ipynb)
-[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.PLACEHOLDER-blue)](https://doi.org/)
-[![Email](https://img.shields.io/badge/Email-Contactar-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:joseignacio.peinador@gmail.com) [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452) [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-00A3E0?style=for-the-badge&logo=python&logoColor=white)](https://numba.pydata.org/) [![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Validacion_Experimental_Completa.ipynb) [![Status](https://img.shields.io/badge/Status-Peer_Review_Ready-4c1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6)
 
 ### José Ignacio Peinador Sala
 
@@ -39,6 +32,8 @@ Desafiando el paradigma de que las fases espectrales son aleatorias a larga dist
 | **Termodinámico** | ROI de Complejidad | **0.105** (vs 0.028 en mod 30) | El sistema se "congela" en el óptimo mod 6 |
 | **Modelo** | Validación Riemann-GUE | **$p_{KS} = 0.27$** | Indistinguibilidad local del caos estándar |
 
+
+[![License](https://img.shields.io/badge/License-PolyForm_Noncommercial-005CA9?style=for-the-badge&logo=open-source-initiative&logoColor=white)](https://polyformproject.org/licenses/noncommercial/1.0.0/) [![Papers](https://img.shields.io/badge/Paper-Leer_PDF-B31B1B?style=for-the-badge&logo=latex&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Dualidad_Espectral_Aritmetica.pdf) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.PLACEHOLDER-0099CC?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/)
 ---
 
 ## 🧩 Innovaciones Nucleares

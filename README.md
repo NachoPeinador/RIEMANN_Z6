@@ -7,11 +7,10 @@
 [![Papers](https://img.shields.io/badge/📄-Read_Paper-yellow.svg)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Dualidad_Espectral_Aritmetica.pdf)
 [![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-F37626.svg?style=flat&logo=Jupyter)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Validacion_Experimental_Completa.ipynb)
 [![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.PLACEHOLDER-blue)](https://doi.org/)
+[![Email](https://img.shields.io/badge/Email-Contactar-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:joseignacio.peinador@gmail.com) [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452) [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
 
 ### José Ignacio Peinador Sala
-### joseignacio.peinador@gmail.com 
-### [0009-0008-1822-3452](https://orcid.org/0009-0008-1822-3452) 
-### [@todos_lumpen](https://twitter.com/todos_lumpen/status/950475430661902340?ref_src=twsrc%5Etfw)
+
 ---
 
 ## 🔍 Visión

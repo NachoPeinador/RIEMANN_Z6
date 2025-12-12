@@ -87,6 +87,7 @@ Images/    # Figuras y visualizaciones
 Este proyecto prioriza la ciencia reproducible. El código utiliza `numba` para garantizar que los benchmarks de tiempo sean comparaciones justas (JIT vs JIT).
 
 **Prerrequisitos:**
+
 ```bash
 python>=3.8
 numpy>=1.21
@@ -96,6 +97,7 @@ numba>=0.55  # Crítico para el factorizador
 Ejecutar la Suite:Bashgit clone [https://github.com/tu-usuario/riemann-z6.git](https://github.com/tu-usuario/riemann-z6.git)
 cd riemann-z6
 jupyter notebook Notebooks/Validacion_Experimental_Completa.ipynb
+```
 
 ---
 

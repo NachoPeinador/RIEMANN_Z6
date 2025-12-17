@@ -238,5 +238,3 @@ If you use the **Riemann-Z6** architecture, the **Factorization Reactor**, or th
 <br><br>
 \</div\>
 
-```
-```

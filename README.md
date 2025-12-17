@@ -124,7 +124,7 @@ Este proyecto prioriza la **ciencia reproducible**. Para garantizar que la compa
 ### Opción A: Ejecución en la Nube (Recomendado)
 La forma más rápida de validar los resultados sin configurar un entorno local. Incluye la validación del SNR y la demostración de factorización.
 
-[![Open In Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad-Espectral_Aritmetica_Complete_Suite.ipynb)
+[![Open In Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb)
 
 ### Opción B: Instalación Local (Para Auditoría)
 

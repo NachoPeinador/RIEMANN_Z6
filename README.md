@@ -1,4 +1,4 @@
-# 🌌 Riemann-Z6: El Cristal Aritmético
+# 🌌 Riemann-Z6: El Cristal Aritmético [![Read in English](https://img.shields.io/badge/Lang-Read%20in%20English-blue?style=for-the-badge&logoColor=white&color=012169)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/README_GB.md)
 
 ### Decodificando la Dualidad Espectral para Factorización y Primos de Mersenne
 

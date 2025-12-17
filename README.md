@@ -232,9 +232,9 @@ If you use the **Riemann-Z6** architecture, the **Factorization Reactor**, or th
 
 -----
 
-\<div align="center"\>
+<div align="center">
 <br>
-\<b\>Last Update:\</b\> December 2025 \&nbsp;|\&nbsp; \<b\>Status:\</b\> Research Complete \&nbsp;|\&nbsp; Made with ⚛️ & 🐍
+<b>Last Update:</b> December 2025 | <b>Status:</b> Research Complete | Made with ⚛️ & 🐍
 <br><br>
-\</div\>
+</div>
 

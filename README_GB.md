@@ -126,7 +126,7 @@ This project prioritizes **reproducible science**. To ensure the performance com
 
 The fastest way to validate results without local configuration. Includes SNR validation and factorization demonstration.
 
-[](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad-Espectral_Aritmetica_Complete_Suite.ipynb)
+[](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb)
 
 ### Option B: Local Installation (For Auditing)
 

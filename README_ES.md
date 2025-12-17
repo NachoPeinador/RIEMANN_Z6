@@ -215,9 +215,9 @@ Si utilizas la arquitectura **Riemann-Z6**, el **Reactor de Factorización** o l
 ---
 
 <div align="center">
-  <br>
-  <b>Last Update:</b> December 2025 &nbsp;|&nbsp; <b>Status:</b> Research Complete &nbsp;|&nbsp; Made with ⚛️ & 🐍
-  <br><br>
+<br>
+<b>Last Update:</b> December 2025 | <b>Status:</b> Research Complete | Made with ⚛️ & 🐍
+<br><br>
 </div>
 
 

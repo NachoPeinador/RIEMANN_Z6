@@ -93,8 +93,8 @@ This repository is organized to ensure **total scientific reproducibility**.
 ```text
 .
 ├── 📂 Papers/                          # Academic and Theoretical Documentation
-│   ├── 📄 Dualidad_Espectral.pdf       # ⭐️ The Paper (Revised Final Version)
-│   └── 📝 Dualidad_Espectral.tex       # LaTeX Source Code (Compilable)
+│   ├── 📄 Spectral-Arithmetic_Duality.pdf       # ⭐️ The Paper (Revised Final Version)
+│   └── 📝 Spectral-Arithmetic_Duality.tex       # LaTeX Source Code (Compilable)
 │
 ├── 📂 Notebooks/                       # Computational Lab (Python + Numba)
 │   ├── 📓 Validation_Suite.ipynb       # 🔬 The Research "Core" (7 Phases):

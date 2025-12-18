@@ -21,7 +21,7 @@ This "arithmetic memory" transforms pure mathematics into computational engineer
 * **Prediction:** Deterministic localization of Mersenne Primes (**Channel 1**).
 
 <p align="center">
-  <img src="Images/figura_final_aplicaciones.png" alt="Computational Validation: Factorization and Mersenne" width="100%">
+  <img src="Images/final_figure_aplications.png" alt="Computational Validation: Factorization and Mersenne" width="100%">
   <br>
   <em>Figure 1. Experimental Validation: Exact 33% algorithmic reduction (Left) and Total collapse of Mersenne Primes into Channel 1 (Right).</em>
 </p>

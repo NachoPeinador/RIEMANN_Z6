@@ -57,10 +57,11 @@ The emergent modular coherence has tangible algorithmic consequences:
 ### 1. The Quadratic Coherence Identity and SNR Saturation
 The mathematical core of the saturation phenomenon is established by an exact identity:
 
-
+\[
 L(2,\chi_0^{(6)}) = \left[ L(1,\chi_{12}) \right]^2 = \frac{\pi^2}{9}.
+\]
 
-
+**Analytical Derivation:** In the accompanying paper, we derive analytically how this identity, when combined with the complete multiplicative structure of integers (via the explicit formula), leads to the saturated empirical value $\mathrm{SNR_{sat}} \approx 12.69$ (see Apéndice F of the paper). This bridges the gap between pure number theory and observed spectral statistics.
 **Analytical Derivation:** In the accompanying paper, we derive analytically how this identity, when combined with the complete multiplicative structure of integers (via the explicit formula), leads to the saturated empirical value $\mathrm{SNR_{sat}} \approx 12.69$ (see Apéndice F of the paper). This bridges the gap between pure number theory and observed spectral statistics.
 
 > **Physical Implication:** The Noise Factor is **$R_1=1.0$**. Modulus 6 acts as an ideal waveguide where fluctuation energy is carried entirely by coherent amplitude, without entropic dissipation.

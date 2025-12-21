@@ -36,6 +36,71 @@ La coherencia modular emergente tiene consecuencias algorítmicas tangibles:
 
 ---
 
+## 🧭 Marco Conceptual del Estudio
+
+### 1. Flujo de Descubrimiento: De la Paradoja a las Aplicaciones
+
+```mermaid
+graph TD
+    P["Paradoja Fundamental<br>Caos local (GUE) vs Orden aritmético global"] --> FE["Fórmula Explícita<br>Riemann-von Mangoldt"]
+    FE --> ID["Identidad Cuadrática<br>L(2,χ₀⁽⁶⁾) = (π/3)² ≈ 1.0966"]
+    ID --> SNR["Saturación del SNR<br>12.69 ± 0.01 (valor empírico)"]
+    SNR --> RGUE["Ensemble Riemann-GUE<br>Modelo unificador validado (p_KS = 0.27)"]
+    RGUE --> TH["Termodinámica Informativa<br>Módulo 6: EF = 1.00 (óptimo)"]
+    RGUE --> APP1["Aplicación 1: Factorización<br>-33.33% espacio de búsqueda"]
+    RGUE --> APP2["Aplicación 2: Primos de Mersenne<br>100% en Canal 1 (1 mód 6)"]
+    
+    style P fill:#f9f,stroke:#333,stroke-width:2px
+    style ID fill:#9f9,stroke:#333,stroke-width:2px
+    style SNR fill:#ff9,stroke:#333,stroke-width:2px
+    style RGUE fill:#bbf,stroke:#333,stroke-width:3px
+```
+### 2. Unificación Interdisciplinar: El Nexus Riemann-GUE
+
+<p align="center">
+  <img src="Images/mapa_conceptual_unificado.png" alt="Unificación Espectral-Aritmética - Ensemble Riemann-GUE como nexo interdisciplinar" width="90%">
+  <br>
+  <em><strong>Figura 2.</strong> El Ensemble Riemann-GUE (o su realización hamiltoniana $\hat{H}_{\text{RGUE}}$) actúa como objeto interpolador que reconcilia la rigidez aritmética con la universalidad del caos, a través del mecanismo de ruptura de simetría $\mathbb{Z}/6\mathbb{Z}$, fijado por la anomalía $L(2,\chi_0^{(6)}) = (\pi/3)^2$ (Adaptado de la Fig. X del artículo).</em>
+</p>
+
+**Explicación de las conexiones:**
+
+| Conexión | Mecanismo | Resultado Clave |
+| :--- | :--- | :--- |
+| **Teoría de Números → RGUE** | Fórmulas Explícitas + Identidad $(\pi/3)^2$ | Conexión analítica ceros↔primos |
+| **Matrices Aleatorias → RGUE** | Perturbación estructurada + Ruptura $U(N) \to \mathbb{Z}/6\mathbb{Z}$ | Preservación universalidad local |
+| **RGUE → Caos Cuántico** | Saturación SNR → Punto fijo $g^*$ | Transición difusivo→saturado |
+| **Programa de Langlands → RGUE** | Correspondencia conductor↔módulo + Optimalidad $m_\chi$ | Generalización a otras funciones $L$ |
+
+### 3. La Jerarquía de Parsimonia: Niveles de Estructura
+
+```mermaid
+graph BT
+    L4["Nivel 4: OUTPUT<br>Coherencia Observada<br>SNR(N) → 12.69"] --> L3
+    L3["<strong>Nivel 3: MESO<br>Parsimonia Informativa</strong><br>L(2,χ₀⁽⁶⁾) = (π/3)²<br><em>(Estructura Emergente)</em>"] --> L2
+    L2["Nivel 2: LOCAL<br>Universalidad<br>p(s) ∼ s² (GUE)<br><em>(Input Fijo)</em>"] --> L1
+    L1["Nivel 1: GLOBAL<br>Ley de Weyl<br>d̄(E) ∼ (1/2π) ln E<br><em>(Input Fijo)</em>"]
+    
+    style L1 fill:#e1f5fe,stroke:#01579b
+    style L2 fill:#f3e5f5,stroke:#4a148c
+    style L3 fill:#e8f5e8,stroke:#1b5e20,stroke-width:3px
+    style L4 fill:#fff3e0,stroke:#e65100
+```
+**Interpretación:** La estructura modular $\mathbb{Z}/6\mathbb{Z}$ (Nivel 3) emerge como organizador óptimo que maximiza la información aritmética recuperable, actuando sobre las fluctuaciones permitidas por la universalidad local GUE (Nivel 2) dentro del marco global de la ley de Weyl (Nivel 1), generando la coherencia observada (Nivel 4).
+
+---
+
+### 🔑 **Puntos Clave del Marco Conceptual**
+
+1. **No es tautológico:** El Ensemble Riemann-GUE no inyecta arbitrariamente $\mathbb{Z}/6\mathbb{Z}$; este emerge como punto fijo termodinámico del espacio de parámetros.
+2. **Dualidad preservada:** El modelo mantiene la estadística local GUE ($p_{\text{KS}} = 0.27$) mientras introduce correlaciones modulares de largo alcance.
+3. **Generalizable:** El marco sugiere una correspondencia más amplia (análoga a Langlands) entre conductores de caracteres y módulos óptimos de coherencia espectral.
+4. **Físicamente interpretable:** La saturación del SNR actúa como un "límite de Chandrasekhar informativo" donde la señal aritmética y el ruido espectral alcanzan equilibrio.
+
+> **Conclusión Conceptual:** El espectro de Riemann no elige aleatoriamente entre caos y orden; **cristaliza** en el punto óptimo donde la memoria aritmética ($\mathbb{Z}/6\mathbb{Z$) y la entropía espectral (GUE) maximizan conjuntamente la eficiencia informacional.
+
+---
+
 ## 📊 Validación Experimental ($N=10^5$ Ceros)
 
 [![Statistical Significance](https://img.shields.io/badge/P--VALUE-10⁻⁷⁵-702082?style=for-the-badge)](https://en.wikipedia.org/wiki/P-value) [![SNR Saturation](https://img.shields.io/badge/SNR_SATURATION-12.69-007EC6?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Algorithm Speedup](https://img.shields.io/badge/FACTORIZATION_SPEEDUP-33.33%25-4C1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Mersenne Symmetry](https://img.shields.io/badge/MERSENNE_POLARIZATION-100%25-D00000?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb)

@@ -1,5 +1,5 @@
 # 🌌 Riemann-Z6: El Cristal Aritmético 
-
+> **English Version Available** | [Click here for the English README](README.md)
 ### Decodificando la Dualidad Espectral para Factorización y Primos de Mersenne
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-00A3E0?style=for-the-badge&logo=python&logoColor=white)](https://numba.pydata.org/) [![Open in Colab](https://img.shields.io/badge/Jupyter-Open_in_Colab-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Status](https://img.shields.io/badge/Status-Peer_Review_Ready-4c1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Dualidad_Espectral-Aritmetica.pdf)
@@ -103,8 +103,8 @@ Este repositorio está organizado para garantizar la **reproducibilidad científ
 │   ├── 📄 Dualidad_Espectral.pdf       # ⭐️ El Paper (Versión Final Revisada)
 │   └── 📝 Dualidad_Espectral.tex       # Código fuente LaTeX (Compilable)
 │
-├── 📂 Notebooks/                       # Laboratorio Computacional (Python + Numba)
-│   ├── 📓 Validation_Suite.ipynb       # 🔬 El "Core" de la investigación (7 Fases):
+├── 📂 Notebooks/                                           # Laboratorio Computacional (Python + Numba)
+│   ├── 📓 Dualidad_Espectral_Aritmetica.ipynb              # 🔬 El "Core" de la investigación (7 Fases):
 │   │   ├── 1. Anomalía Estadística (Tests KS con p ~ 10⁻⁷⁵)
 │   │   ├── 2. Dinámica del SNR (Saturación exacta a 12.69)
 │   │   ├── 3. Modelo Riemann-GUE (Validación Monte Carlo)
@@ -164,7 +164,6 @@ Nota sobre el Hardware: Aunque los tiempos absolutos de factorización variarán
 
 ---
 
----
 ## 🎯 Contribución y Perspectivas
 
 Este trabajo proporciona un **marco teórico y evidencia empírica** para la coherencia modular en los ceros de la función zeta de Riemann. Al introducir el Ensemble Riemann-GUE, ofrece un modelo concreto donde las estadísticas locales de matrices aleatorias coexisten con la estructura aritmética global.

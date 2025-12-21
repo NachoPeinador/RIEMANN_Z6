@@ -58,7 +58,7 @@ graph TD
 ### 2. Unificación Interdisciplinar: El Nexus Riemann-GUE
 
 <p align="center">
-  <img src="Images/mapa_conceptual_unificado.png" alt="Unificación Espectral-Aritmética - Ensemble Riemann-GUE como nexo interdisciplinar" width="90%">
+  <img src="Images/mapa_conceptual.png" alt="Unificación Espectral-Aritmética - Ensemble Riemann-GUE como nexo interdisciplinar" width="90%">
   <br>
   <em><strong>Figura 2.</strong> El Ensemble Riemann-GUE (o su realización hamiltoniana $\hat{H}_{\text{RGUE}}$) actúa como objeto interpolador que reconcilia la rigidez aritmética con la universalidad del caos, a través del mecanismo de ruptura de simetría $\mathbb{Z}/6\mathbb{Z}$, fijado por la anomalía $L(2,\chi_0^{(6)}) = (\pi/3)^2$ (Adaptado de la Fig. X del artículo).</em>
 </p>

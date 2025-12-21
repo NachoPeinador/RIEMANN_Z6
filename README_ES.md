@@ -224,7 +224,7 @@ matplotlib  >= 3.5
 ```
 **4. Ejecutar la Suite**
 ```bash
-jupyter notebook Notebooks/Dualidad-Espectral_Aritmetica_Complete_Suite.ipynb
+jupyter notebook Notebooks/Dualidad_Espectral_Aritmetica.ipynb
 ```
 Nota sobre el Hardware: Aunque los tiempos absolutos de factorización variarán según tu CPU (Intel/AMD/Apple Silicon), la ratio de reducción de operaciones (~33.33%) es una invariante matemática y debe mantenerse constante en cualquier arquitectura.
 

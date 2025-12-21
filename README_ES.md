@@ -86,6 +86,7 @@ graph BT
     style L3 fill:#e8f5e8,stroke:#1b5e20,stroke-width:3px
     style L4 fill:#fff3e0,stroke:#e65100
 ```
+
 **Interpretación:** La estructura modular $\mathbb{Z}/6\mathbb{Z}$ (Nivel 3) emerge como organizador óptimo que maximiza la información aritmética recuperable, actuando sobre las fluctuaciones permitidas por la universalidad local GUE (Nivel 2) dentro del marco global de la ley de Weyl (Nivel 1), generando la coherencia observada (Nivel 4).
 
 ---

@@ -9,6 +9,23 @@
 
 ---
 
+## 🎯 TL;DR - Lo Esencial
+
+### 🔬 **Hallazgos Teóricos**
+- ⚛️ **Coherencia Modular:** Los ceros de Riemann muestran estructura Z/6Z
+- 📊 **SNR Saturado:** 12.69 ± 0.01 (demostrado desde L(2,χ)=π²/9)
+- 🧩 **Modelo Unificador:** Ensemble Riemann-GUE (p_KS = 0.27 vs GUE)
+
+### ⚡ **Aplicaciones Computacionales**
+- ⚙️ **Factorización:** -33.33% espacio de búsqueda (validado)
+- 🔢 **Mersenne Primes:** 100% en Canal 1 (demostración analítica)
+- 📈 **Eficiencia Óptima:** Módulo 6 maximiza EF = 1.00
+
+### 💡 **Concepto Clave**
+> El espectro opera como **"cristal aritmético"** donde la memoria Z/6Z y el caos GUE alcanzan equilibrio óptimo de información.
+
+---
+
 ## 🔍 Visión General de la Investigación: Resolviendo la Dualidad Caos-Orden
 
 Durante décadas, ha existido una tensión fundamental en el estudio de la función zeta de Riemann: la **universalidad local del Ensemble Unitario Gaussiano (GUE)** sugiere caos espectral, mientras que la **rigidez global impuesta por la Criba de Eratóstenes** implica un orden determinista.
@@ -281,6 +298,12 @@ Si utilizas la arquitectura **Riemann-Z6**, el **Reactor de Factorización** o l
 ```
 **APA:**
 > Peinador Sala, J. I. (2025). *Dualidad Espectral-Aritmética: Coherencia de Fase Modular en el Espectro de Riemann*. GitHub/Zenodo. https://doi.org/[TU_DOI_AQUI]
+
+**Para citar el algoritmo de factorización:**
+> El algoritmo de cribado modular Z/6Z reduce el espacio de búsqueda en un 33.33% (Peinador, 2025, Sección 8.1).
+
+**Para citar los resultados de Mersenne:**
+> Los primos de Mersenne exhiben polarización modular completa en el canal 1 (Peinador, 2025, Teorema A.2).
 
 ---
 

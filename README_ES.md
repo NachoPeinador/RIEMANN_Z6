@@ -98,7 +98,7 @@ graph BT
 3. **Generalizable:** El marco sugiere una correspondencia más amplia (análoga a Langlands) entre conductores de caracteres y módulos óptimos de coherencia espectral.
 4. **Físicamente interpretable:** La saturación del SNR actúa como un "límite de Chandrasekhar informativo" donde la señal aritmética y el ruido espectral alcanzan equilibrio.
 
-> **Conclusión Conceptual:** El espectro de Riemann no elige aleatoriamente entre caos y orden; **cristaliza** en el punto óptimo donde la memoria aritmética ($\mathbb{Z}/6\mathbb{Z$) y la entropía espectral (GUE) maximizan conjuntamente la eficiencia informacional.
+> **Conclusión Conceptual:** El espectro de Riemann no elige aleatoriamente entre caos y orden; **cristaliza** en el punto óptimo donde la memoria aritmética (Z/6Z) y la entropía espectral (GUE) maximizan conjuntamente la eficiencia informacional.
 
 ---
 

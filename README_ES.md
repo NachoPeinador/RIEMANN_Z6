@@ -40,13 +40,13 @@ La coherencia modular emergente tiene consecuencias algorítmicas tangibles:
 
 [![Statistical Significance](https://img.shields.io/badge/P--VALUE-10⁻⁷⁵-702082?style=for-the-badge)](https://en.wikipedia.org/wiki/P-value) [![SNR Saturation](https://img.shields.io/badge/SNR_SATURATION-12.69-007EC6?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Algorithm Speedup](https://img.shields.io/badge/FACTORIZATION_SPEEDUP-33.33%25-4C1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Mersenne Symmetry](https://img.shields.io/badge/MERSENNE_POLARIZATION-100%25-D00000?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb)
 
-| Dominio | Métrica | Resultado | Implicación / Naturaleza de la Evidencia |
-| :--- | :--- | :--- | :--- |
-| **Estadístico** | Test de Uniformidad (KS) para fases en $x=7$ | **$p \sim 10^{-75}$** | Rechazo extremo de la hipótesis nula de fase uniforme (se preserva el comportamiento GUE local). |
-| **Espectral** | Valor de Saturación del SNR | **12.69 $\pm$ 0.01** | Valor empírico de saturación; se demuestra analíticamente que proviene de $L(2,\chi_0^{(6)}) = \pi^2/9$. |
-| **Estructural** | Primos de Mersenne ($M_p, p>2$) | **100% en el Canal 1** | Hecho observacional para todos los primos de Mersenne conocidos; consecuencia de su aritmética modular. |
-| **Modelo** | Riemann-GUE vs. GUE (espaciado local) | **$p_{KS} = 0.27$** | No se pudo rechazar la hipótesis nula; el modelo preserva la universalidad local. |
-| **Termodinámico** | Eficiencia Óptima del Filtro | Máximo en el **módulo 6** | El módulo 6 maximiza la relación de eficiencia informacional entre filtros modulares simples. |
+| Dominio | Métrica | Resultado | Referencia en el Paper | Implicación / Naturaleza de la Evidencia |
+| :--- | :--- | :--- | :--- | :--- |
+| **Estadístico** | Test de Uniformidad (KS) para fases en $x=7$ | **$p \sim 10^{-75}$** | **Tabla 1** (Sección 4.1) | Rechazo extremo de la hipótesis nula de fase uniforme (se preserva el comportamiento GUE local). |
+| **Espectral** | Valor de Saturación del SNR | **12.69 $\pm$ 0.01** | **Figura 3** (Sección 5.2) | Valor empírico de saturación; se demuestra analíticamente que proviene de $L(2,\chi_0^{(6)}) = \pi^2/9$ (**Teorema 7.1** y **Apéndice F**). |
+| **Estructural** | Primos de Mersenne ($M_p, p>2$) | **100% en el Canal 1** | **Teorema A.2** (Apéndice A.2) | Hecho observacional para todos los primos de Mersenne conocidos; demostración analítica directa de $M_p \equiv 1 \pmod{6}$. |
+| **Modelo** | Riemann-GUE vs. GUE (espaciado local) | **$p_{KS} = 0.27$** | **Resultado 6.1** (Sección 6.3) | No se pudo rechazar la hipótesis nula; el modelo preserva la universalidad local GUE. |
+| **Termodinámico** | Eficiencia Óptima del Filtro | Máximo en el **módulo 6**<br>(EF = 1.00 vs 0.125) | **Resultado C.1** (Apéndice C)<br>**Figura G.1** (Apéndice G) | El módulo 6 maximiza la ganancia relativa marginal (EF) entre filtros modulares sucesivos. |
 
 
 

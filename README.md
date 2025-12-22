@@ -189,6 +189,8 @@ This is not a statistical fluke, but a **demonstrable arithmetic fact:** For any
 This repository is organized to ensure **total scientific reproducibility**.
 <details>
 <summary><strong>👇 Click to view repository structure</strong></summary>
+
+
 ```text
 .
 ├── 📂 Papers/                          # Academic & Theoretical Documentation
@@ -215,6 +217,7 @@ This repository is organized to ensure **total scientific reproducibility**.
 └── ⚙️ requirements.txt                 # Dependencies (numpy, matplotlib, numba...)
 ```
 </details>
+
 ---
 
 ## 🚀 Reproducibility and Benchmarking
@@ -256,6 +259,7 @@ jupyter notebook Notebooks/Spectral_Arithmetic_Duality.ipynb
 ```
 Hardware Note: While absolute factorization times will vary according to your CPU (Intel/AMD/Apple Silicon), the operation reduction ratio (~33.33%) is a mathematical invariant and should remain constant on any architecture.
 </details>
+
 ---
 
 ## 🎯 Contribution and Perspectives

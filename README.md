@@ -1,8 +1,8 @@
 # 🌌 Riemann-Z6: The Arithmetic Crystal
 ### Decoding Spectral Duality for Factorization and Mersenne Primes
-> **English Version Available** | [![Read in English](https://img.shields.io/badge/Lang-Read%20in%20English-blue?style=for-the-badge&logoColor=white&color=012169)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/README_GB.md)
+> **Spanish Version Available** | [![Read in Spanish](https://img.shields.io/badge/Lang-Read%20in%20English-blue?style=for-the-badge&logoColor=white&color=012169)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/README_ES.md)
 >
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-00A3E0?style=for-the-badge&logo=python&logoColor=white)](https://numba.pydata.org/) [![Open in Colab](https://img.shields.io/badge/Jupyter-Open_in_Colab-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Status](https://img.shields.io/badge/Status-Peer_Review_Ready-4c1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Dualidad_Espectral-Aritmetica.pdf)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-00A3E0?style=for-the-badge&logo=python&logoColor=white)](https://numba.pydata.org/) [![Open in Colab](https://img.shields.io/badge/Jupyter-Open_in_Colab-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb) [![Status](https://img.shields.io/badge/Status-Peer_Review_Ready-4c1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Spectral-Arithmetic_Duality.pdf)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:joseignacio.peinador@gmail.com) [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452) [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
 
 ### **Author:** José Ignacio Peinador Sala
@@ -122,7 +122,7 @@ graph BT
 
 ## 📊 Experimental Validation ($N=10^5$ Zeros)
 
-[![Statistical Significance](https://img.shields.io/badge/P--VALUE-10⁻⁷⁵-702082?style=for-the-badge)](https://en.wikipedia.org/wiki/P-value) [![SNR Saturation](https://img.shields.io/badge/SNR_SATURATION-12.69-007EC6?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Algorithm Speedup](https://img.shields.io/badge/FACTORIZATION_SPEEDUP-33.33%25-4C1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Mersenne Symmetry](https://img.shields.io/badge/MERSENNE_POLARIZATION-100%25-D00000?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb)
+[![Statistical Significance](https://img.shields.io/badge/P--VALUE-10⁻⁷⁵-702082?style=for-the-badge)](https://en.wikipedia.org/wiki/P-value) [![SNR Saturation](https://img.shields.io/badge/SNR_SATURATION-12.69-007EC6?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Algorithm Speedup](https://img.shields.io/badge/FACTORIZATION_SPEEDUP-33.33%25-4C1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb) [![Mersenne Symmetry](https://img.shields.io/badge/MERSENNE_POLARIZATION-100%25-D00000?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb)
 
 | Domain | Metric | Result | Paper Reference | Implication / Nature of Evidence |
 | :--- | :--- | :--- | :--- | :--- |
@@ -132,7 +132,7 @@ graph BT
 | **Model** | Riemann-GUE vs. GUE (local spacing) | **$p_{KS} = 0.27$** | **Result 6.1** (Section 6.3) | Failed to reject the null hypothesis; model preserves local GUE universality. |
 | **Thermodynamic** | Filter Optimal Efficiency | Maximum at **modulo 6**<br>(EF = 1.00 vs 0.125) | **Result C.1** (Appendix C)<br>**Figure G.1** (Appendix G) | Module 6 maximizes the marginal relative gain (EF) between successive modular filters. |
 
-[![License](https://img.shields.io/badge/License-PolyForm_Noncommercial-005CA9?style=for-the-badge&logo=open-source-initiative&logoColor=white)](https://polyformproject.org/licenses/noncommercial/1.0.0/) [![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=for-the-badge&logo=latex&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Dualidad_Espectral-Aritmetica.pdf) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.PLACEHOLDER-0099CC?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/)
+[![License](https://img.shields.io/badge/License-PolyForm_Noncommercial-005CA9?style=for-the-badge&logo=open-source-initiative&logoColor=white)](https://polyformproject.org/licenses/noncommercial/1.0.0/) [![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=for-the-badge&logo=latex&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Spectral-Arithmetic_Duality.pdf) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.PLACEHOLDER-0099CC?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/)
 
 ---
 
@@ -183,11 +183,11 @@ This repository is organized to ensure **total scientific reproducibility**.
 ```text
 .
 ├── 📂 Papers/                          # Academic & Theoretical Documentation
-│   ├── 📄 Dualidad_Espectral.pdf       # ⭐️ The Paper (Final Reviewed Version)
-│   └── 📝 Dualidad_Espectral.tex       # LaTeX source code (Compilable)
+│   ├── 📄 Spectral-Arithmetic_Duality.pdf       # ⭐️ The Paper (Final Reviewed Version)
+│   └── 📝 Spectral-Arithmetic_Duality.tex       # LaTeX source code (Compilable)
 │
-├── 📂 Notebooks/                                           # Computational Lab (Python + Numba)
-│   ├── 📓 Dualidad_Espectral_Aritmetica.ipynb              # 🔬 The Research "Core" (7 Phases):
+├── 📂 Notebooks/                                         # Computational Lab (Python + Numba)
+│   ├── 📓 Spectral_Arithmetic_Duality.ipynb              # 🔬 The Research "Core" (7 Phases):
 │   │   ├── 1. Statistical Anomaly (KS Tests with p ~ 10⁻⁷⁵)
 │   │   ├── 2. SNR Dynamics (Exact saturation at 12.69)
 │   │   ├── 3. Riemann-GUE Model (Monte Carlo Validation)
@@ -215,7 +215,7 @@ This project prioritizes **reproducible science**. To ensure the performance com
 ### Option A: Cloud Execution (Recommended)
 The fastest way to validate results without setting up a local environment. Includes SNR validation and factorization demonstration.
 
-[![Open In Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb)
+[![Open In Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb)
 
 *Click to open and run the notebook in Google Colab. Your changes will not be saved to this repository.*
 
@@ -241,7 +241,7 @@ matplotlib  >= 3.5
 ```
 **4. Run the Suite**
 ```bash
-jupyter notebook Notebooks/Dualidad_Espectral_Aritmetica.ipynb
+jupyter notebook Notebooks/Spectral_Arithmetic_Duality.ipynb
 ```
 Hardware Note: While absolute factorization times will vary according to your CPU (Intel/AMD/Apple Silicon), the operation reduction ratio (~33.33%) is a mathematical invariant and should remain constant on any architecture.
 

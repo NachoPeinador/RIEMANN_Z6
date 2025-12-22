@@ -183,8 +183,8 @@ Este repositorio está organizado para garantizar la **reproducibilidad científ
 ```text
 .
 ├── 📂 Papers/                          # Documentación Académica y Teórica
-│   ├── 📄 Dualidad_Espectral.pdf       # ⭐️ El Paper (Versión Final Revisada)
-│   └── 📝 Dualidad_Espectral.tex       # Código fuente LaTeX (Compilable)
+│   ├── 📄 Dualidad_Espectral-Aritmetica.pdf       # ⭐️ El Paper (Versión Final Revisada)
+│   └── 📝 Dualidad_Espectral-Aritmetica.tex       # Código fuente LaTeX (Compilable)
 │
 ├── 📂 Notebooks/                                           # Laboratorio Computacional (Python + Numba)
 │   ├── 📓 Dualidad_Espectral_Aritmetica.ipynb              # 🔬 El "Core" de la investigación (7 Fases):

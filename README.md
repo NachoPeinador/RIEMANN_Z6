@@ -187,7 +187,8 @@ This is not a statistical fluke, but a **demonstrable arithmetic fact:** For any
 ## 📁 Repository Structure
 
 This repository is organized to ensure **total scientific reproducibility**.
-
+<details>
+<summary><strong>👇 Click to view repository structure</strong></summary>
 ```text
 .
 ├── 📂 Papers/                          # Academic & Theoretical Documentation
@@ -213,7 +214,7 @@ This repository is organized to ensure **total scientific reproducibility**.
 ├── 📜 LICENSE                          # Dual Licensing Model
 └── ⚙️ requirements.txt                 # Dependencies (numpy, matplotlib, numba...)
 ```
-
+</details>
 ---
 
 ## 🚀 Reproducibility and Benchmarking

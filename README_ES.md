@@ -189,7 +189,7 @@ Esto no es una casualidad estadística, sino un **hecho aritmético demostrable*
 Este repositorio está organizado para garantizar la **reproducibilidad científica total**.
 <details>
 <summary><strong>👇 Clic para ver la estructura del repositorio</strong></summary>
-
+<br>
 ```text
 .
 ├── 📂 Papers/                          # Documentación Académica y Teórica
@@ -215,7 +215,7 @@ Este repositorio está organizado para garantizar la **reproducibilidad científ
 ├── 📜 LICENSE                          # Modelo de Licenciamiento Dual
 └── ⚙️ requirements.txt                 # Dependencias (numpy, matplotlib, numba...)
 ```
-<\details>
+</details>
 
 ---
 

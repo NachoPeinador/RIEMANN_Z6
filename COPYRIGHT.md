@@ -1,3 +1,41 @@
+# ⚖️ Copyright and Commercial Licensing Notice
+# 🌌 Riemann-Z6: The Arithmetic Crystal
+
+**© 2025 José Ignacio Peinador Sala. All rights reserved.**
+*This notice is complementary and does not replace the full `LICENSE` file.*
+
+---
+
+## 📜 Dual Licensing Model
+
+This repository operates under a **Dual Licensing Model**:
+
+### 1. Non-Commercial Use (Open Access)
+- **License:** PolyForm Noncommercial License 1.0.0
+- **Permitted:** Academic research, educational use, personal projects, replication of experiments.
+- **Requirements:** Attribution, preservation of the same license.
+- **File:** Consult the full terms in [`LICENSE`](./LICENSE).
+
+### 2. Commercial Use (Restricted)
+**All commercial applications are STRICTLY PROHIBITED without express written authorization.**
+
+Commercial use includes, but is not limited to:
+- Implementation of modular factorization algorithms (`Z/6Z Reactor`) in paid services or proprietary hardware.
+- Utilization of the **Mersenne Symmetry Breaking** property for prediction, sieving, or cryptanalysis for profit.
+- Integration of the mathematical architecture (Quadratic Coherence Identity, `Riemann-GUE` model) into commercial products or services.
+- Cloud or edge computing deployment that generates revenue.
+- Military, defense, or government applications with contracts.
+- Consulting services utilizing this Intellectual Property (IP).
+
+## 🔒 Intellectual Property and Key Innovations
+
+The core innovations protected in this work include:
+- The **Modular Factorization Reactor** based on `Z/6Z` resonance and its 33.33% reduction in search space.
+- The discovery of the **Absolute Symmetry Breaking** of Mersenne Primes (100% polarization in Channel 1).
+- The formulation of the **Quadratic Coherence Identity**.
+
+---
+
 # ⚖️ Aviso de Copyright y Licenciamiento Comercial
 # 🌌 Riemann-Z6: El Cristal Aritmético
 

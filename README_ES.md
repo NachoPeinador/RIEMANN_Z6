@@ -92,11 +92,11 @@ graph TD
 ### 3. La Jerarquía de Parsimonia: Niveles de Estructura
 
 ```mermaid
-graph BT
-    L4["Nivel 4: OUTPUT<br>Coherencia Observada<br>SNR(N) → 12.69"] --> L3
-    L3["<strong>Nivel 3: MESO<br>Parsimonia Informativa</strong><br>L(2,χ₀⁽⁶⁾) = (π/3)²<br><em>(Estructura Emergente)</em>"] --> L2
-    L2["Nivel 2: LOCAL<br>Universalidad<br>p(s) ∼ s² (GUE)<br><em>(Input Fijo)</em>"] --> L1
-    L1["Nivel 1: GLOBAL<br>Ley de Weyl<br>d̄(E) ∼ (1/2π) ln E<br><em>(Input Fijo)</em>"]
+graph LR
+    L1["Nivel 1: GLOBAL<br>Ley de Weyl<br>d̄(E) ∼ (1/2π) ln E<br><em>(Input Fijo)</em>"] --> L2
+    L2["Nivel 2: LOCAL<br>Universalidad<br>p(s) ∼ s² (GUE)<br><em>(Input Fijo)</em>"] --> L3
+    L3["<strong>Nivel 3: MESO<br>Parsimonia Informativa</strong><br>L(2,χ₀⁽⁶⁾) = (π/3)²<br><em>(Estructura Emergente)</em>"] --> L4
+    L4["Nivel 4: OUTPUT<br>Coherencia Observada<br>SNR(N) → 12.69"]
     
     style L1 fill:#e1f5fe,stroke:#01579b
     style L2 fill:#f3e5f5,stroke:#4a148c

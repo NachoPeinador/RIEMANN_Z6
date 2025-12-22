@@ -434,7 +434,7 @@ Our results show a critical deviation: the SNR between prime and forbidden chann
 \label{subsec:modelo_saturacion}
 
 \begin{modelo}[Abrupt Saturation Law]
-The experimental data fit with high precision ($R^2 = 0.995$) to the saturation model:
+The experimental data fit with high precision ($R^2 = 0.995$) to the saturation model, as illustrated in Figure \ref{fig:dinamica_snr}:
 \[
 \SNR(N) = \SNR_{\text{sat}} \left[ 1 - \exp\left(-\left(\frac{N}{N_{\text{sat}}}\right)^\beta\right) \right]
 \]
@@ -446,6 +446,15 @@ N_{\text{sat}} &= 132 \pm 5 \quad (\text{Transition scale}) \\
 \end{align*}
 The value $\beta > 1$ indicates a sharp phase transition where the arithmetic structure rapidly imposes itself over the noise.
 \end{modelo}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{snr_saturacion.png}
+    \caption{\textbf{Evidence of GUE Universality Breakdown.} 
+    \textbf{Left:} Dynamics of the Signal-to-Noise Ratio (SNR) as a function of the number of zeros $N$. Experimental data (dots) deviate drastically from the GUE diffusive prediction (dashed red line), fitting with high precision ($R^2 > 0.99$) to the proposed saturation model (solid magenta line) with $\beta \approx 1.17$. Saturation occurs after the critical scale $N_{\text{sat}} \approx 132$.
+    \textbf{Right:} Spectral power decomposition by modular channel $\pmod 6$. Resonance in prime channels $1$ and $5$ (red) dominates over the background noise of forbidden channels (gray) by more than two orders of magnitude, driving the SNR saturation.}
+    \label{fig:dinamica_snr}
+\end{figure}
 
 % NEW OBSERVATION IN SECTION 5.2:
 \begin{observacion}[Interpretation of the Critical Exponent $\beta \approx 1.17$]
@@ -1701,17 +1710,21 @@ Experimental Mathematics, 3(3), 173-197.
 % --------------------------------------------------------------------------
 % ACKNOWLEDGMENTS AND DECLARATIONS
 % --------------------------------------------------------------------------
-\section*{Acknowledgments}
-The author thanks the open-source software development community, particularly the creators of \textsc{Python}, \textsc{NumPy}, \textsc{SciPy}, \textsc{Matplotlib}, and \textsc{Numba}, whose JIT compilation technology has been instrumental for the computational validation of the sieving algorithms. The fundamental role of the Google Colab platform for executing high-performance computational resources is acknowledged.
+\section*{Acknowledgments and AI Usage Declaration}
+The author thanks the open-source software community, particularly the developers of \textsc{Python}, \textsc{NumPy}, \textsc{SciPy}, and \textsc{Numba}, whose JIT technology was instrumental for this study. The role of Google Colab in providing high-performance computing resources is also acknowledged.
 
-\section*{Funding Statement}
-This research has not received specific external funding from public, commercial, or non-profit agencies, having been conducted entirely with the author's own resources as an independent researcher.
+Furthermore, transparency is declared regarding the use of Large Language Models (LLMs), which were employed strictly as auxiliary tools for style revision, code refactoring, and logical consistency verification. The theoretical conception, mathematical derivations, and conclusions remain the sole and exclusive authorship of the researcher.
 
-\section*{Data and Code Availability}
-The complete source code for replicating the experiments, including phase coherence analysis, Riemann-GUE Ensemble simulations, and modular sieving algorithms, is available in the public repository:
+\section*{Declaration of Interests and Funding}
+This research was conducted entirely with personal resources, without external funding. The author declares no competing financial or personal interests. This work was not motivated by commercial gain or institutional academic advancement, but solely by the pursuit of understanding and the conviction that fundamental knowledge must be a common good.
+
+\section*{Data, Code, and Licensing Availability}
+In keeping with the spirit of open and reproducible science, the complete source code, modular sieve algorithms, and Riemann-GUE Ensemble simulations are available in the public repository:
 \begin{center}
 \url{https://github.com/NachoPeinador/RIEMANN_Z6}
 \end{center}
-The spectral data used correspond to the set of the first $10^5$ non-trivial zeros of the Riemann zeta function, obtained from the \textit{L-functions and Modular Forms Database} (LMFDB).
+The material is distributed under a \textbf{dual licensing} model: free use is authorized and encouraged for academic research, educational purposes, and scientific replication (Open Science). However, given the computational advantage of the presented optimization algorithms, use for commercial or industrial purposes is restricted and subject to the license terms specified in the repository.
+
+The underlying spectral data correspond to the first $10^5$ zeros of the Riemann zeta function, obtained from the \textit{L-functions and Modular Forms Database} (LMFDB).
 
 \end{document}

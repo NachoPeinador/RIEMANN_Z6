@@ -434,7 +434,7 @@ Nuestros resultados muestran una desviación crítica: el SNR entre canales prim
 \label{subsec:modelo_saturacion}
 
 \begin{modelo}[Ley de Saturación Abrupta]
-Los datos experimentales se ajustan con alta precisión ($R^2 = 0.995$) al modelo de saturación:
+Los datos experimentales se ajustan con alta precisión ($R^2 = 0.995$) al modelo de saturación, tal como se ilustra en la Figura \ref{fig:dinamica_snr}:
 \[
 \SNR(N) = \SNR_{\text{sat}} \left[ 1 - \exp\left(-\left(\frac{N}{N_{\text{sat}}}\right)^\beta\right) \right]
 \]
@@ -446,6 +446,15 @@ N_{\text{sat}} &= 132 \pm 5 \quad (\text{Escala de transición}) \\
 \end{align*}
 El valor $\beta > 1$ indica una transición de fase nítida donde la estructura aritmética se impone rápidamente sobre el ruido.
 \end{modelo}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{snr_saturacion.png}
+    \caption{\textbf{Evidencia de la Ruptura de Universalidad GUE.} 
+    \textbf{Izquierda:} Dinámica de la Relación Señal-Ruido (SNR) en función del número de ceros $N$. Los datos experimentales (puntos) se desvían drásticamente de la predicción difusiva GUE (línea roja discontinua), ajustándose con alta precisión ($R^2 > 0.99$) al modelo de saturación propuesto (línea sólida magenta) con $\beta \approx 1.17$. La saturación ocurre tras la escala crítica $N_{\text{sat}} \approx 132$.
+    \textbf{Derecha:} Descomposición de la potencia espectral por canal modular $\pmod 6$. La resonancia en los canales primos $1$ y $5$ (rojo) domina sobre el ruido de fondo de los canales prohibidos (gris) por más de dos órdenes de magnitud, originando la saturación del SNR.}
+    \label{fig:dinamica_snr}
+\end{figure}
 
 % NUEVA OBSERVACIÓN EN SECCIÓN 5.2:
 \begin{observacion}[Interpretación del Exponente Crítico $\beta \approx 1.17$]
@@ -1708,17 +1717,21 @@ Experimental Mathematics, 3(3), 173-197.
 % --------------------------------------------------------------------------
 % AGRADECIMIENTOS Y DECLARACIONES
 % --------------------------------------------------------------------------
-\section*{Agradecimientos}
-El autor agradece a la comunidad de desarrollo de software de código abierto, en particular a los creadores de \textsc{Python}, \textsc{NumPy}, \textsc{SciPy}, \textsc{Matplotlib} y \textsc{Numba}, cuya tecnología de compilación JIT ha sido instrumental para la validación computacional de los algoritmos de cribado. Se reconoce el papel fundamental de la plataforma Google Colab para la ejecución de los recursos computacionales de alto rendimiento.
+\section*{Agradecimientos y Declaración de Uso de IA}
+El autor agradece a la comunidad de código abierto, especialmente a los desarrolladores de \textsc{Python}, \textsc{NumPy}, \textsc{SciPy} y \textsc{Numba}, cuya tecnología JIT fue instrumental para este estudio. Se reconoce el papel de Google Colab en la computación de alto rendimiento.
 
-\section*{Declaración de Financiación}
-Esta investigación no ha recibido financiación externa específica de agencias de los sectores público, comercial o sin fines de lucro, habiendo sido realizada en su totalidad con recursos propios del autor como investigador independiente.
+Asimismo, se declara transparencia en el uso de modelos de lenguaje avanzados (LLMs), los cuales fueron utilizados estrictamente como herramientas auxiliares para la revisión de estilo, refactorización de código y verificación de coherencia lógica. La concepción teórica, las derivaciones matemáticas y las conclusiones son autoría íntegra y exclusiva del investigador.
 
-\section*{Disponibilidad de Datos y Código}
-El código fuente completo para la replicación de los experimentos, incluyendo el análisis de coherencia de fase, las simulaciones del Ensemble Riemann-GUE y los algoritmos de cribado modular, está disponible en el repositorio público:
+\section*{Declaración de Intereses y Financiación}
+Esta investigación se realizó en su totalidad con recursos propios, sin financiación externa. El autor declara no tener conflictos de interés financieros o personales. Este trabajo no fue motivado por beneficio comercial o avance académico institucional, sino únicamente por la búsqueda de comprensión y la convicción de que el conocimiento fundamental debe ser un bien común.
+
+\section*{Disponibilidad de Datos, Código y Licenciamiento}
+En consonancia con el espíritu de la ciencia abierta y reproducible, el código fuente completo, los algoritmos de cribado modular y las simulaciones del Ensemble Riemann-GUE están disponibles en el repositorio público:
 \begin{center}
 \url{https://github.com/NachoPeinador/RIEMANN_Z6}
 \end{center}
-Los datos espectrales utilizados corresponden al conjunto de los primeros $10^5$ ceros no triviales de la función zeta de Riemann, obtenidos de la base de datos \textit{L-functions and Modular Forms Database} (LMFDB).
+El material se distribuye bajo un modelo de \textbf{licenciamiento dual}: se autoriza y fomenta el uso libre para fines de investigación académica, educativos y de replicación científica (Open Science). No obstante, dada la ventaja computacional de los algoritmos de optimización presentados, el uso con fines comerciales o industriales está restringido y sujeto a los términos de licencia especificados en el repositorio.
+
+Los datos espectrales base corresponden a los primeros $10^5$ ceros de la función zeta, obtenidos de la \textit{L-functions and Modular Forms Database} (LMFDB).
 
 \end{document}

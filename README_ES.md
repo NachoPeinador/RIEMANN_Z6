@@ -187,6 +187,8 @@ Esto no es una casualidad estadística, sino un **hecho aritmético demostrable*
 ## 📁 Estructura del Repositorio
 
 Este repositorio está organizado para garantizar la **reproducibilidad científica total**.
+<details>
+<summary><strong>👇 Clic para ver la estructura del repositorio</strong></summary>
 
 ```text
 .
@@ -213,8 +215,8 @@ Este repositorio está organizado para garantizar la **reproducibilidad científ
 ├── 📜 LICENSE                          # Modelo de Licenciamiento Dual
 └── ⚙️ requirements.txt                 # Dependencias (numpy, matplotlib, numba...)
 ```
+<\details>
 
----
 
 ## 🚀 Reproducibilidad y Benchmarking
 

@@ -93,12 +93,12 @@ graph TD
 ### 3. The Parsimony Hierarchy: Levels of Structure
 
 ```mermaid
-graph BT
-    L4["Level 4: OUTPUT<br>Observed Coherence<br>SNR(N) → 12.69"] --> L3
-    L3["<strong>Level 3: MESO<br>Informative Parsimony</strong><br>L(2,χ₀⁽⁶⁾) = (π/3)²<br><em>(Emergent Structure)</em>"] --> L2
-    L2["Level 2: LOCAL<br>Universality<br>p(s) ∼ s² (GUE)<br><em>(Fixed Input)</em>"] --> L1
-    L1["Level 1: GLOBAL<br>Weyl's Law<br>d̄(E) ∼ (1/2π) ln E<br><em>(Fixed Input)</em>"]
-
+graph LR
+    L1["Level 1: GLOBAL<br>Weyl's Law<br>d̄(E) ∼ (1/2π) ln E<br><em>(Fixed Input)</em>"] --> L2
+    L2["Level 2: LOCAL<br>Universality<br>p(s) ∼ s² (GUE)<br><em>(Fixed Input)</em>"] --> L3
+    L3["<strong>Level 3: MESO<br>Informational Parsimony</strong><br>L(2,χ₀⁽⁶⁾) = (π/3)²<br><em>(Emergent Structure)</em>"] --> L4
+    L4["Level 4: OUTPUT<br>Observed Coherence<br>SNR(N) → 12.69"]
+    
     style L1 fill:#e1f5fe,stroke:#01579b
     style L2 fill:#f3e5f5,stroke:#4a148c
     style L3 fill:#e8f5e8,stroke:#1b5e20,stroke-width:3px

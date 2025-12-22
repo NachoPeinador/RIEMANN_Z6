@@ -217,6 +217,7 @@ Este repositorio está organizado para garantizar la **reproducibilidad científ
 ```
 <\details>
 
+---
 
 ## 🚀 Reproducibilidad y Benchmarking
 
@@ -257,6 +258,7 @@ jupyter notebook Notebooks/Dualidad_Espectral_Aritmetica.ipynb
 ```
 Nota sobre el Hardware: Aunque los tiempos absolutos de factorización variarán según tu CPU (Intel/AMD/Apple Silicon), la ratio de reducción de operaciones (~33.33%) es una invariante matemática y debe mantenerse constante en cualquier arquitectura.
 </details>
+
 ---
 
 ## 🎯 Contribución y Perspectivas

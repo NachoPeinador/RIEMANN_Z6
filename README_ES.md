@@ -126,7 +126,7 @@ graph BT
 <p align="center">
   <img src="Images/snr_saturacion.png" alt="Saturación del SNR vs Predicción GUE" width="100%">
   <br>
-  <em><strong>Figura 3. Evidencia de la Ruptura de Universalidad.</strong> Izquierda: La dinámica del SNR (puntos grises) se desvía del modelo GUE (línea roja) y se ajusta al modelo de saturación (línea magenta). Derecha: La energía se concentra masivamente en los canales primos 1 y 5.</em>
+  <em><strong>Figura 3. Evidencia de la Ruptura de Universalidad.</strong> Izquierda: La dinámica del SNR (puntos grises) se desvía del modelo GUE (línea discontinua roja) y se ajusta al modelo de saturación (línea magenta). Derecha: La energía se concentra masivamente en los canales primos 1 y 5.</em>
 </p>
 
 [![Statistical Significance](https://img.shields.io/badge/P--VALUE-10⁻⁷⁵-702082?style=for-the-badge)](https://en.wikipedia.org/wiki/P-value) [![SNR Saturation](https://img.shields.io/badge/SNR_SATURATION-12.69-007EC6?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Algorithm Speedup](https://img.shields.io/badge/FACTORIZATION_SPEEDUP-33.33%25-4C1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Mersenne Symmetry](https://img.shields.io/badge/MERSENNE_POLARIZATION-100%25-D00000?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb)
@@ -227,9 +227,9 @@ La forma más rápida de validar los resultados sin configurar un entorno local.
 
 *Haz clic para abrir y ejecutar el notebook en Google Colab. Tus cambios no se guardarán en este repositorio.*
 
+### Opción B: Instalación Local (Para Auditoría)
 <details>
 <summary><strong>👇 Clic para ver instrucciones de Instalación Local y Auditoría</strong></summary>
-### Opción B: Instalación Local (Para Auditoría)
 
 Si deseas inspeccionar el código o ejecutarlo en tu propio hardware para validar los tiempos de CPU:
 

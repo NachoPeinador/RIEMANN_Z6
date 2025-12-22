@@ -122,6 +122,14 @@ graph BT
 
 ## 📊 Experimental Validation ($N=10^5$ Zeros)
 
+> **The Smoking Gun:** Unlike the standard diffusive prediction (GUE), the spectral Signal-to-Noise Ratio saturates rapidly.
+
+<p align="center">
+  <img src="Images/snr_saturation.png" alt="SNR Saturation vs GUE Prediction" width="100%">
+  <br>
+  <em><strong>Figure 3. Evidence of Universality Breakdown.</strong> Left: SNR dynamics (gray dots) deviate from the GUE model (dashed red line) and fit the saturation model (magenta line). Right: Energy massively concentrates in prime channels 1 and 5.</em>
+</p>
+
 [![Statistical Significance](https://img.shields.io/badge/P--VALUE-10⁻⁷⁵-702082?style=for-the-badge)](https://en.wikipedia.org/wiki/P-value) [![SNR Saturation](https://img.shields.io/badge/SNR_SATURATION-12.69-007EC6?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Algorithm Speedup](https://img.shields.io/badge/FACTORIZATION_SPEEDUP-33.33%25-4C1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb) [![Mersenne Symmetry](https://img.shields.io/badge/MERSENNE_POLARIZATION-100%25-D00000?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb)
 
 | Domain | Metric | Result | Paper Reference | Implication / Nature of Evidence |
@@ -220,6 +228,8 @@ The fastest way to validate results without setting up a local environment. Incl
 *Click to open and run the notebook in Google Colab. Your changes will not be saved to this repository.*
 
 ### Option B: Local Installation (For Audit)
+<details>
+<summary><strong>👇 Clic para ver instrucciones de Instalación Local y Auditoría</strong></summary>
 
 If you wish to inspect the code or run it on your own hardware to validate CPU times:
 
@@ -244,7 +254,7 @@ matplotlib  >= 3.5
 jupyter notebook Notebooks/Spectral_Arithmetic_Duality.ipynb
 ```
 Hardware Note: While absolute factorization times will vary according to your CPU (Intel/AMD/Apple Silicon), the operation reduction ratio (~33.33%) is a mathematical invariant and should remain constant on any architecture.
-
+</details>
 ---
 
 ## 🎯 Contribution and Perspectives

@@ -1,8 +1,8 @@
 # 🌌 Riemann-Z6: El Cristal Aritmético 
 ### Decodificando la Dualidad Espectral para Factorización y Primos de Mersenne
 [![Read in English](https://img.shields.io/badge/Lang-Read%20in%20English-blue?style=flat&logoColor=white&color=012169)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/README.md)
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/) [![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-00A3E0?style=flat&logo=python&logoColor=white)](https://numba.pydata.org/) [![Open in Colab](https://img.shields.io/badge/Jupyter-Open_in_Colab-F37626?style=flat&logo=jupyter&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Status](https://img.shields.io/badge/Status-Peer_Review_Ready-4c1?style=flat)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Dualidad_Espectral-Aritmetica.pdf)
-[![Email](https://img.shields.io/badge/Email-Contactar-D14836?style=flat&logo=gmail&logoColor=white)](mailto:joseignacio.peinador@gmail.com) [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452) [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/todos_lumpen) 
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/) [![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-00A3E0?style=flat&logo=python&logoColor=white)](https://numba.pydata.org/) [![Open in Colab](https://img.shields.io/badge/Jupyter-Open_in_Colab-F37626?style=flat&logo=jupyter&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb)[![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452) [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
+[![License](https://img.shields.io/badge/License-PolyForm_Noncommercial-005CA9?style=flat&logo=open-source-initiative&logoColor=white)](https://polyformproject.org/licenses/noncommercial/1.0.0/) [![Papers](https://img.shields.io/badge/Paper-Leer_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Dualidad_Espectral-Aritmetica.pdf) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.PLACEHOLDER-0099CC?style=flat&logo=zenodo&logoColor=white)](https://doi.org/)
 
 ---
 
@@ -126,7 +126,7 @@ graph LR
   <em><strong>Figura 3. Evidencia de la Ruptura de Universalidad.</strong> Izquierda: La dinámica del SNR (puntos grises) se desvía del modelo GUE (línea discontinua roja) y se ajusta al modelo de saturación (línea magenta). Derecha: La energía se concentra masivamente en los canales primos 1 y 5.</em>
 </p>
 
-[![Statistical Significance](https://img.shields.io/badge/P--VALUE-10⁻⁷⁵-702082?style=for-the-badge)](https://en.wikipedia.org/wiki/P-value) [![SNR Saturation](https://img.shields.io/badge/SNR_SATURATION-12.69-007EC6?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Algorithm Speedup](https://img.shields.io/badge/FACTORIZATION_SPEEDUP-33.33%25-4C1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Mersenne Symmetry](https://img.shields.io/badge/MERSENNE_POLARIZATION-100%25-D00000?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb)
+[![Statistical Significance](https://img.shields.io/badge/P--VALUE-10⁻⁷⁵-702082?style=flat)](https://en.wikipedia.org/wiki/P-value) [![SNR Saturation](https://img.shields.io/badge/SNR_SATURATION-12.69-007EC6?style=flat)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Algorithm Speedup](https://img.shields.io/badge/FACTORIZATION_SPEEDUP-33.33%25-4C1?style=flat)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![Mersenne Symmetry](https://img.shields.io/badge/MERSENNE_POLARIZATION-100%25-D00000?style=flat)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb)
 
 | Dominio | Métrica | Resultado | Referencia en el Paper | Implicación / Naturaleza de la Evidencia |
 | :--- | :--- | :--- | :--- | :--- |
@@ -136,9 +136,6 @@ graph LR
 | **Modelo** | Riemann-GUE vs. GUE (espaciado local) | **$p_{KS} = 0.27$** | **Resultado 6.1** (Sección 6.3) | No se pudo rechazar la hipótesis nula; el modelo preserva la universalidad local GUE. |
 | **Termodinámico** | Eficiencia Óptima del Filtro | Máximo en el **módulo 6**<br>(EF = 1.00 vs 0.125) | **Resultado C.1** (Apéndice C)<br>**Figura G.1** (Apéndice G) | El módulo 6 maximiza la ganancia relativa marginal (EF) entre filtros modulares sucesivos. |
 
-
-
-[![License](https://img.shields.io/badge/License-PolyForm_Noncommercial-005CA9?style=for-the-badge&logo=open-source-initiative&logoColor=white)](https://polyformproject.org/licenses/noncommercial/1.0.0/) [![Papers](https://img.shields.io/badge/Paper-Leer_PDF-B31B1B?style=for-the-badge&logo=latex&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Dualidad_Espectral-Aritmetica.pdf) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.PLACEHOLDER-0099CC?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/)
 ---
 
 ## 🧩 Innovaciones Nucleares

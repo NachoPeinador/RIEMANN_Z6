@@ -232,7 +232,7 @@ Este trabajo proporciona un **marco teórico y evidencia empírica** para la coh
 
 ## ⚖️ Modelo de Licenciamiento Dual
 <details>
-<summary><strong>👇 Clic para ver la licencia</strong></summary>
+<summary><strong>👇 Clic para ver la Licencia</strong></summary>
 
 Este proyecto adopta un enfoque híbrido para democratizar el descubrimiento científico protegiendo al mismo tiempo la propiedad intelectual de los algoritmos de optimización.
 
@@ -258,7 +258,7 @@ Cualquier implementación de la arquitectura de cribado **$\mathbb{Z}/6\mathbb{Z
 
 ## 📝 Citación
 <details>
-<summary><strong>👇 Clic para ver la forma de citar el trabajo</strong></summary>
+<summary><strong>👇 Clic para ver los detalles de Citación</strong></summary>
 
 Si utilizas la arquitectura **Riemann-Z6**, el **Reactor de Factorización** o los hallazgos sobre **Mersenne** en tu investigación, por favor cita el trabajo original:
 

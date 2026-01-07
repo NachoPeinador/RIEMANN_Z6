@@ -179,42 +179,6 @@ This is not a statistical fluke, but a **demonstrable arithmetic fact:** For any
 
 ---
 
-## 📁 Repository Structure
-
-This repository is organized to ensure **total scientific reproducibility**.
-<details>
-<summary><strong>👇 Click to view repository structure</strong></summary>
-
-
-```text
-.
-├── 📂 Papers/                          # Academic & Theoretical Documentation
-│   ├── 📄 Spectral-Arithmetic_Duality.pdf       # ⭐️ The Paper (Final Reviewed Version)
-│   └── 📝 Spectral-Arithmetic_Duality.tex       # LaTeX source code (Compilable)
-│
-├── 📂 Notebooks/                                         # Computational Lab (Python + Numba)
-│   ├── 📓 Spectral_Arithmetic_Duality.ipynb              # 🔬 The Research "Core" (7 Phases):
-│   │   ├── 1. Statistical Anomaly (KS Tests with p ~ 10⁻⁷⁵)
-│   │   ├── 2. SNR Dynamics (Exact saturation at 12.69)
-│   │   ├── 3. Riemann-GUE Model (Monte Carlo Validation)
-│   │   ├── 4. Analytical Verification (L(2) = π²/9 Identity)
-│   │   ├── 5. Thermodynamics (Optimal ROI calculation 0.105)
-│   │   ├── 6. Factorization Reactor (Benchmark: -33% ops)
-│   │   └── 7. Mersenne Radar (Symmetry Breaking)
-│   │
-│   └── 💾 zetazeros.txt                # Dataset (LMFDB - First 100k zeros)
-│
-├── 📂 Images/                          # High-Resolution Visualizations
-│   ├── 📊 snr_saturation.png
-│   └── 📉 mersenne_symmetry.png
-│
-├── 📜 LICENSE                          # Dual Licensing Model
-└── ⚙️ requirements.txt                 # Dependencies (numpy, matplotlib, numba...)
-```
-</details>
-
----
-
 ## 🚀 Reproducibility and Benchmarking
 
 This project prioritizes **reproducible science**. To ensure the performance comparison (-33%) is fair, the code uses `numba` to compile both algorithms (Classic and Riemann) to machine code (JIT), eliminating the Python interpreter overhead.
@@ -268,6 +232,8 @@ This work provides a **theoretical framework and empirical evidence** for modula
 ---
 
 ## ⚖️ Dual Licensing Model
+<details>
+<summary><strong>👇 Click to view Licence details</strong></summary>
 
 This project adopts a hybrid approach to democratize scientific discovery while protecting the intellectual property of optimization algorithms.
 
@@ -287,10 +253,13 @@ Any implementation of the **$\mathbb{Z}/6\mathbb{Z}$** sieving architecture or i
 
 > [!IMPORTANT]
 > **Legal Notice:** The 33% reduction in computational costs constitutes an industrial competitive advantage. To consult terms of use or request a commercial exemption, review the **[COPYRIGHT.md](./COPYRIGHT.md)** file.
+<details>
 
 ---
 
 ## 📝 Citation
+<details>
+<summary><strong>👇 Click to view Citation details</strong></summary>
 
 If you use the **Riemann-Z6** architecture, the **Factorization Reactor**, or the findings on **Mersenne** in your research, please cite the original work:
 
@@ -314,6 +283,43 @@ If you use the **Riemann-Z6** architecture, the **Factorization Reactor**, or th
 
 **To cite the Mersenne results:**
 > Mersenne primes exhibit complete modular polarization in channel 1 (Peinador, 2025, Theorem A.2).
+<details>
+
+---
+
+## 📁 Repository Structure
+
+This repository is organized to ensure **total scientific reproducibility**.
+<details>
+<summary><strong>👇 Click to view repository structure</strong></summary>
+
+
+```text
+.
+├── 📂 Papers/                          # Academic & Theoretical Documentation
+│   ├── 📄 Spectral-Arithmetic_Duality.pdf       # ⭐️ The Paper (Final Reviewed Version)
+│   └── 📝 Spectral-Arithmetic_Duality.tex       # LaTeX source code (Compilable)
+│
+├── 📂 Notebooks/                                         # Computational Lab (Python + Numba)
+│   ├── 📓 Spectral_Arithmetic_Duality.ipynb              # 🔬 The Research "Core" (7 Phases):
+│   │   ├── 1. Statistical Anomaly (KS Tests with p ~ 10⁻⁷⁵)
+│   │   ├── 2. SNR Dynamics (Exact saturation at 12.69)
+│   │   ├── 3. Riemann-GUE Model (Monte Carlo Validation)
+│   │   ├── 4. Analytical Verification (L(2) = π²/9 Identity)
+│   │   ├── 5. Thermodynamics (Optimal ROI calculation 0.105)
+│   │   ├── 6. Factorization Reactor (Benchmark: -33% ops)
+│   │   └── 7. Mersenne Radar (Symmetry Breaking)
+│   │
+│   └── 💾 zetazeros.txt                # Dataset (LMFDB - First 100k zeros)
+│
+├── 📂 Images/                          # High-Resolution Visualizations
+│   ├── 📊 snr_saturation.png
+│   └── 📉 mersenne_symmetry.png
+│
+├── 📜 LICENSE                          # Dual Licensing Model
+└── ⚙️ requirements.txt                 # Dependencies (numpy, matplotlib, numba...)
+```
+</details>
 
 ---
 

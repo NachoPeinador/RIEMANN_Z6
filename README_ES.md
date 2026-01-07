@@ -178,42 +178,6 @@ Esto no es una casualidad estadística, sino un **hecho aritmético demostrable*
 
 ---
 
-## 📁 Estructura del Repositorio
-
-Este repositorio está organizado para garantizar la **reproducibilidad científica total**.
-<details>
-<summary><strong>👇 Clic para ver la estructura del repositorio</strong></summary>
-
-
-```text
-.
-├── 📂 Papers/                          # Documentación Académica y Teórica
-│   ├── 📄 Dualidad_Espectral-Aritmetica.pdf       # ⭐️ El Paper (Versión Final Revisada)
-│   └── 📝 Dualidad_Espectral-Aritmetica.tex       # Código fuente LaTeX (Compilable)
-│
-├── 📂 Notebooks/                                           # Laboratorio Computacional (Python + Numba)
-│   ├── 📓 Dualidad_Espectral_Aritmetica.ipynb              # 🔬 El "Core" de la investigación (7 Fases):
-│   │   ├── 1. Anomalía Estadística (Tests KS con p ~ 10⁻⁷⁵)
-│   │   ├── 2. Dinámica del SNR (Saturación exacta a 12.69)
-│   │   ├── 3. Modelo Riemann-GUE (Validación Monte Carlo)
-│   │   ├── 4. Verificación Analítica (Identidad L(2) = π²/9)
-│   │   ├── 5. Termodinámica (Cálculo de ROI óptimo 0.105)
-│   │   ├── 6. Reactor de Factorización (Benchmark: -33% ops)
-│   │   └── 7. Radar de Mersenne (Ruptura de Simetría)
-│   │
-│   └── 💾 zetazeros.txt                # Dataset (LMFDB - Primeros 100k ceros)
-│
-├── 📂 Images/                          # Visualizaciones en Alta Resolución
-│   ├── 📊 snr_saturation.png
-│   └── 📉 mersenne_symmetry.png
-│
-├── 📜 LICENSE                          # Modelo de Licenciamiento Dual
-└── ⚙️ requirements.txt                 # Dependencias (numpy, matplotlib, numba...)
-```
-</details>
-
----
-
 ## 🚀 Reproducibilidad y Benchmarking
 
 Este proyecto prioriza la **ciencia reproducible**. Para garantizar que la comparación de rendimiento (-33%) sea justa, el código utiliza `numba` para compilar ambos algoritmos (Clásico y Riemann) a código máquina (JIT), eliminando el overhead del intérprete de Python.
@@ -267,6 +231,8 @@ Este trabajo proporciona un **marco teórico y evidencia empírica** para la coh
 ---
 
 ## ⚖️ Modelo de Licenciamiento Dual
+<details>
+<summary><strong>👇 Clic para ver la licencia</strong></summary>
 
 Este proyecto adopta un enfoque híbrido para democratizar el descubrimiento científico protegiendo al mismo tiempo la propiedad intelectual de los algoritmos de optimización.
 
@@ -286,10 +252,13 @@ Cualquier implementación de la arquitectura de cribado **$\mathbb{Z}/6\mathbb{Z
 
 > [!IMPORTANT]
 > **Aviso Legal:** La reducción del 33% en costes computacionales constituye una ventaja competitiva industrial. Para consultar los términos de uso o solicitar una exención comercial, revisa el archivo **[COPYRIGHT.md](./COPYRIGHT.md)**.
+</details>
 
 ---
 
 ## 📝 Citación
+<details>
+<summary><strong>👇 Clic para ver la forma de citar el trabajo</strong></summary>
 
 Si utilizas la arquitectura **Riemann-Z6**, el **Reactor de Factorización** o los hallazgos sobre **Mersenne** en tu investigación, por favor cita el trabajo original:
 
@@ -313,6 +282,43 @@ Si utilizas la arquitectura **Riemann-Z6**, el **Reactor de Factorización** o l
 
 **Para citar los resultados de Mersenne:**
 > Los primos de Mersenne exhiben polarización modular completa en el canal 1 (Peinador, 2025, Teorema A.2).
+</details>
+
+---
+
+## 📁 Estructura del Repositorio
+
+Este repositorio está organizado para garantizar la **reproducibilidad científica total**.
+<details>
+<summary><strong>👇 Clic para ver la estructura del repositorio</strong></summary>
+
+
+```text
+.
+├── 📂 Papers/                          # Documentación Académica y Teórica
+│   ├── 📄 Dualidad_Espectral-Aritmetica.pdf       # ⭐️ El Paper (Versión Final Revisada)
+│   └── 📝 Dualidad_Espectral-Aritmetica.tex       # Código fuente LaTeX (Compilable)
+│
+├── 📂 Notebooks/                                           # Laboratorio Computacional (Python + Numba)
+│   ├── 📓 Dualidad_Espectral_Aritmetica.ipynb              # 🔬 El "Core" de la investigación (7 Fases):
+│   │   ├── 1. Anomalía Estadística (Tests KS con p ~ 10⁻⁷⁵)
+│   │   ├── 2. Dinámica del SNR (Saturación exacta a 12.69)
+│   │   ├── 3. Modelo Riemann-GUE (Validación Monte Carlo)
+│   │   ├── 4. Verificación Analítica (Identidad L(2) = π²/9)
+│   │   ├── 5. Termodinámica (Cálculo de ROI óptimo 0.105)
+│   │   ├── 6. Reactor de Factorización (Benchmark: -33% ops)
+│   │   └── 7. Radar de Mersenne (Ruptura de Simetría)
+│   │
+│   └── 💾 zetazeros.txt                # Dataset (LMFDB - Primeros 100k ceros)
+│
+├── 📂 Images/                          # Visualizaciones en Alta Resolución
+│   ├── 📊 snr_saturation.png
+│   └── 📉 mersenne_symmetry.png
+│
+├── 📜 LICENSE                          # Modelo de Licenciamiento Dual
+└── ⚙️ requirements.txt                 # Dependencias (numpy, matplotlib, numba...)
+```
+</details>
 
 ---
 

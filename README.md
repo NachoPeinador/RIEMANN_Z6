@@ -1,7 +1,7 @@
 # 🌌 Riemann-Z6: The Arithmetic Crystal
 ### Decoding Spectral Duality for Factorization and Mersenne Primes
 [![Read in Spanish](https://img.shields.io/badge/Lang-Read%20in%20Spanish-red?style=flat&logoColor=white&color=red)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/README_ES.md)
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/) [![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-00A3E0?style=flat&logo=python&logoColor=white)](https://numba.pydata.org/) [![Open in Colab](https://img.shields.io/badge/Jupyter-Open_in_Colab-F37626?style=flat&logo=jupyter&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb) [![Status](https://img.shields.io/badge/Status-Peer_Review_Ready-4c1?style=flat)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Spectral-Arithmetic_Duality.pdf)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/) [![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-00A3E0?style=flat&logo=python&logoColor=white)](https://numba.pydata.org/) [![Open in Colab](https://img.shields.io/badge/Jupyter-Open_in_Colab-F37626?style=flat&logo=jupyter&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb) [![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Spectral-Arithmetic_Duality.pdf) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.PLACEHOLDER-0099CC?style=flat&logo=zenodo&logoColor=white)](https://doi.org/)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452) [![X](https://img.shields.io/badge/-%40todos__lumpen-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
 
 ---
@@ -137,7 +137,7 @@ graph LR
 | **Model** | Riemann-GUE vs. GUE (local spacing) | **$p_{KS} = 0.27$** | **Result 6.1** (Section 6.3) | Failed to reject the null hypothesis; model preserves local GUE universality. |
 | **Thermodynamic** | Filter Optimal Efficiency | Maximum at **modulo 6**<br>(EF = 1.00 vs 0.125) | **Result C.1** (Appendix C)<br>**Figure G.1** (Appendix G) | Module 6 maximizes the marginal relative gain (EF) between successive modular filters. |
 
-[![License](https://img.shields.io/badge/License-PolyForm_Noncommercial-005CA9?style=flat&logo=open-source-initiative&logoColor=white)](https://polyformproject.org/licenses/noncommercial/1.0.0/) [![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Spectral-Arithmetic_Duality.pdf) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.PLACEHOLDER-0099CC?style=flat&logo=zenodo&logoColor=white)](https://doi.org/)
+[![License](https://img.shields.io/badge/License-PolyForm_Noncommercial-005CA9?style=flat&logo=open-source-initiative&logoColor=white)](https://polyformproject.org/licenses/noncommercial/1.0.0/) 
 
 ---
 

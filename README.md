@@ -1,9 +1,8 @@
 # 🌌 Riemann-Z6: The Arithmetic Crystal
 ### Decoding Spectral Duality for Factorization and Mersenne Primes
-> **Spanish Version Available** | [![Read in Spanish](https://img.shields.io/badge/Lang-Read%20in%20Spanish-red?style=for-the-badge&logoColor=white&color=red)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/README_ES.md)
->
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-00A3E0?style=for-the-badge&logo=python&logoColor=white)](https://numba.pydata.org/) [![Open in Colab](https://img.shields.io/badge/Jupyter-Open_in_Colab-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb) [![Status](https://img.shields.io/badge/Status-Peer_Review_Ready-4c1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Spectral-Arithmetic_Duality.pdf)
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:joseignacio.peinador@gmail.com) [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452) [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
+[![Read in Spanish](https://img.shields.io/badge/Lang-Read%20in%20Spanish-red?style=flat&logoColor=white&color=red)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/README_ES.md)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/) [![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-00A3E0?style=for-the-badge&logo=python&logoColor=white)](https://numba.pydata.org/) [![Open in Colab](https://img.shields.io/badge/Jupyter-Open_in_Colab-F37626?style=flat&logo=jupyter&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb) [![Status](https://img.shields.io/badge/Status-Peer_Review_Ready-4c1?style=for-the-badge)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Spectral-Arithmetic_Duality.pdf)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=flat&logo=gmail&logoColor=white)](mailto:joseignacio.peinador@gmail.com) [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452) [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
 
 ### **Author:** José Ignacio Peinador Sala
 
@@ -227,7 +226,7 @@ This project prioritizes **reproducible science**. To ensure the performance com
 ### Option A: Cloud Execution (Recommended)
 The fastest way to validate results without setting up a local environment. Includes SNR validation and factorization demonstration.
 
-[![Open In Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb)
+[![Open In Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Spectral_Arithmetic_Duality.ipynb)
 
 *Click to open and run the notebook in Google Colab. Your changes will not be saved to this repository.*
 

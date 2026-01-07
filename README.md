@@ -253,7 +253,7 @@ Any implementation of the **$\mathbb{Z}/6\mathbb{Z}$** sieving architecture or i
 
 > [!IMPORTANT]
 > **Legal Notice:** The 33% reduction in computational costs constitutes an industrial competitive advantage. To consult terms of use or request a commercial exemption, review the **[COPYRIGHT.md](./COPYRIGHT.md)** file.
-<details>
+</details>
 
 ---
 
@@ -283,7 +283,7 @@ If you use the **Riemann-Z6** architecture, the **Factorization Reactor**, or th
 
 **To cite the Mersenne results:**
 > Mersenne primes exhibit complete modular polarization in channel 1 (Peinador, 2025, Theorem A.2).
-<details>
+</details>
 
 ---
 

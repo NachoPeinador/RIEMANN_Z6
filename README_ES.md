@@ -264,14 +264,14 @@ Si utilizas la arquitectura **Riemann-Z6**, el **Reactor de Factorización** o l
 
 **BibTeX (LaTeX):**
 ```bibtex
-@misc{peinador2025riemann,
+@misc{peinador2026riemann,
   author = {Peinador Sala, José Ignacio},
-  title = {Dualidad Espectral-Aritmética: Coherencia de Fase Modular en el Espectro de Riemann},
-  year = {2025},
+  title = {Spectral-Arithmetic Duality: Modular Phase Coherence in the Riemann Spectrum},
+  year = {2026},
   publisher = {Zenodo},
   version = {v1},
   doi = {10.5281/zenodo.PLACEHOLDER},
-  url = {[https://github.com/NachoPeinador/RIEMANN_Z6](https://github.com/NachoPeinador/RIEMANN_Z6)}
+  url = {https://github.com/NachoPeinador/RIEMANN_Z6}
 }
 ```
 **APA:**

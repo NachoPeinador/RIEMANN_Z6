@@ -265,10 +265,10 @@ If you use the **Riemann-Z6** architecture, the **Factorization Reactor**, or th
 
 **BibTeX (LaTeX):**
 ```bibtex
-@misc{peinador2025riemann,
+@misc{peinador2026riemann,
   author = {Peinador Sala, José Ignacio},
   title = {Spectral-Arithmetic Duality: Modular Phase Coherence in the Riemann Spectrum},
-  year = {2025},
+  year = {2026},
   publisher = {Zenodo},
   version = {v1},
   doi = {10.5281/zenodo.PLACEHOLDER},

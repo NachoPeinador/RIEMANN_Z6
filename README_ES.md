@@ -2,7 +2,7 @@
 ### Decodificando la Dualidad Espectral para Factorización y Primos de Mersenne
 [![Read in English](https://img.shields.io/badge/Lang-Read%20in%20English-blue?style=flat&logoColor=white&color=012169)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/README.md)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/) [![Numba](https://img.shields.io/badge/Numba-JIT_Compiled-00A3E0?style=flat&logo=python&logoColor=white)](https://numba.pydata.org/) [![Open in Colab](https://img.shields.io/badge/Jupyter-Open_in_Colab-F37626?style=flat&logo=jupyter&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Dualidad_Espectral_Aritmetica.ipynb) [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452) [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
-[![Papers](https://img.shields.io/badge/Paper-Leer_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Dualidad_Espectral-Aritmetica.pdf) [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.PLACEHOLDER-0099CC?style=flat&logo=zenodo&logoColor=white)](https://doi.org/)
+[![Papers](https://img.shields.io/badge/Paper-Leer_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Dualidad_Espectral-Aritmetica.pdf)[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18485154-333333.svg?style=flate&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.18485154)
 
 ---
 
@@ -270,12 +270,12 @@ Si utilizas la arquitectura **Riemann-Z6**, el **Reactor de Factorización** o l
   year = {2026},
   publisher = {Zenodo},
   version = {v1},
-  doi = {10.5281/zenodo.PLACEHOLDER},
+  doi = {10.5281/zenodo.18485154},
   url = {https://github.com/NachoPeinador/RIEMANN_Z6}
 }
 ```
 **APA:**
-> Peinador Sala, J. I. (2025). *Dualidad Espectral-Aritmética: Coherencia de Fase Modular en el Espectro de Riemann*. GitHub/Zenodo. [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.PLACEHOLDER-0099CC?style=flat&logo=zenodo&logoColor=white)](https://doi.org/)
+> Peinador Sala, J. I. (2025). *Dualidad Espectral-Aritmética: Coherencia de Fase Modular en el Espectro de Riemann*. GitHub/Zenodo. [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18485154-0099CC?style=flat&logo=zenodo&logoColor=white)](https://doi.org/)
 
 **Para citar el algoritmo de factorización:**
 > El algoritmo de cribado modular Z/6Z reduce el espacio de búsqueda en un 33.33% (Peinador, 2025, Sección 8.1).

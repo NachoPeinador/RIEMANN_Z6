@@ -271,12 +271,12 @@ If you use the **Riemann-Z6** architecture, the **Factorization Reactor**, or th
   year = {2026},
   publisher = {Zenodo},
   version = {v1},
-  doi = {10.5281/zenodo.PLACEHOLDER},
+  doi = {10.5281/zenodo.18485154},
   url = {https://github.com/NachoPeinador/RIEMANN_Z6}
 }
 ```
 **APA:**
-> Peinador Sala, J. I. (2025). *Spectral-Arithmetic Duality: Modular Phase Coherence in the Riemann Spectrum*. GitHub/Zenodo. [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.PLACEHOLDER-0099CC?style=flat&logo=zenodo&logoColor=white)](https://doi.org/)
+> Peinador Sala, J. I. (2026). *Spectral-Arithmetic Duality: Modular Phase Coherence in the Riemann Spectrum*. GitHub/Zenodo. [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18485154-0099CC?style=flat&logo=zenodo&logoColor=white)](https://doi.org/)
 
 **To cite the factorization algorithm:**
 > The modular Z/6Z sieving algorithm reduces the search space by 33.33% (Peinador, 2025, Section 8.1).

@@ -61,8 +61,7 @@ graph TD
 * **SNR Saturation:** The Signal-to-Noise Ratio between these channels abandons the GUE diffusive random-walk prediction and abruptly saturates to an asymptotic constant ($\mathrm{SNR}_{\text{sat}} \approx 12.69$).
 * **Critical Scale:** The saturation occurs at a characteristic modular Thouless time ($N_{\text{sat}} \approx 132$), exactly matching the spectral resolution of the prime $p=7$.
 
-### 💻 Reproducibility: You can replicate directly via Jupyter Notebooks. The dataset containing the zeros is included in the repo for immediate out-of-the-box execution.
-You can replicate directly via Jupyter Notebooks. The dataset containing the zeros is included in the repo for immediate out-of-the-box execution.
+💻 Reproducibility: You can replicate directly via Jupyter Notebooks. The dataset containing the zeros is included in the repo for immediate out-of-the-box execution.
 [![Jupyter](https://img.shields.io/badge/Notebooks-Experiments-F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/tree/main/Notebooks/Modular_Phase_Coherence_in_the_Riemann_Spectrum.ipynb)
   
 
@@ -76,7 +75,7 @@ You can replicate directly via Jupyter Notebooks. The dataset containing the zer
 * **Quadratic Coherence Identity:** We provide the analytic foundation by proving $L(2, \chi_0^{(6)}) = (\pi/3)^2$, establishing modulus 6 as a singular "noise-free channel" for arithmetic information.
 * **Thermodynamic Selection:** We demonstrate that the primorial transition $2 \to 6$ maximizes the Return on Investment (ROI) for structural complexity. Strikingly, this optimal ROI identically matches the vacuum informational impedance $R_{\text{fund}} = \ln 2 / (6\ln 3)$.
 
-### 💻 Reproducibility: You can replicate directly via Jupyter Notebooks. The dataset containing the zeros is included in the repo for immediate out-of-the-box execution.
+💻 Reproducibility: You can replicate directly via Jupyter Notebooks. The dataset containing the zeros is included in the repo for immediate out-of-the-box execution.
 [![Jupyter](https://img.shields.io/badge/Notebooks-Experiments-F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/tree/main/Notebooks/The_Riemann_GUE_Ensemble.ipynb)
 
 ---

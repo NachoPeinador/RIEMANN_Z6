@@ -49,9 +49,9 @@ graph TD
 
 ---
 
-## 🚀 Key Scientific Contributions
+# 🚀 Key Scientific Contributions
 
-### Paper I: Modular Phase Coherence in the Riemann Spectrum
+## Modular Phase Coherence in the Riemann Spectrum
 [![Paper](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=for-the-badge&logo=latex&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/Modular_Phase_Coherence_in_the_Riemann_Spectrum.pdf)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18485153-333333.svg?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.18485153)
 
@@ -66,7 +66,7 @@ You can replicate directly via Jupyter Notebooks. The dataset containing the zer
 [![Jupyter](https://img.shields.io/badge/Notebooks-Experiments-F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/tree/main/Notebooks/Modular_Phase_Coherence_in_the_Riemann_Spectrum.ipynb)
   
 
-### Paper II: The Riemann-GUE Ensemble
+## The Riemann-GUE Ensemble
 [![Paper](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=for-the-badge&logo=latex&logoColor=white)](https://github.com/NachoPeinador/RIEMANN_Z6/blob/main/Papers/The_Riemann_GUE_Ensemble.pdf)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20798339-333333.svg?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20798339)
 

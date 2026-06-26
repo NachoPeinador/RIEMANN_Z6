@@ -8,6 +8,14 @@
 
 ---
 
+> 🌌 **El Universo Aritmético / The Arithmetic Universe** >
+
+> 🇬🇧 *This research is part of the theoretical framework of **The Arithmetic Universe**, the theory which postulates that fundamental reality is not hidden in infinite chaos, but in the elegant and humble architecture of integers.* > 🔗 **[Discover the central repository, the interactive notebooks, and the Lean 4 validation here](https://github.com/NachoPeinador/EL_UNIVERSO_ARITMETICO)**.
+>
+> 🇪🇸 *Esta investigación forma parte del marco teórico de **El Universo Aritmético**, la teoría que postula que la realidad fundamental no se esconde en el caos infinito, sino en la elegante y humilde arquitectura de los números enteros.* > 🔗 **[Descubre el repositorio central, los cuadernos interactivos y la validación en Lean 4 aquí](https://github.com/NachoPeinador/EL_UNIVERSO_ARITMETICO)**.
+
+---
+
 ## 🎯 TL;DR — The Essentials
 
 > **What is this?** A dual-paper research project demonstrating that the non-trivial zeros of the Riemann zeta function are governed by a robust $\mathbb{Z}/6\mathbb{Z}$ modular structure, and the introduction of a new random matrix ensemble that perfectly encodes this behavior.

@@ -70,7 +70,7 @@ graph TD
 * **Critical Scale:** The saturation occurs at a characteristic modular Thouless time ($N_{\text{sat}} \approx 132$), exactly matching the spectral resolution of the prime $p=7$.
 
 💻 Reproducibility: You can replicate directly via Jupyter Notebooks. The dataset containing the zeros is included in the repo for immediate out-of-the-box execution.
-[![Jupyter](https://img.shields.io/badge/Notebooks-Experiments-F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white)](https://colab.research.google.com/github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Modular_Phase_Coherence_in_the_Riemann_Spectrum.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github.com/NachoPeinador/RIEMANN_Z6/blob/main/Notebooks/Modular_Phase_Coherence_in_the_Riemann_Spectrum.ipynb)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Formal_Verification_Arithmetic_Constraints_in_Modular_PRBM.ipynb)
   
 
